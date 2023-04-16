@@ -1,3 +1,5 @@
+#Laboratorio 2
+
 
 Este laboratorio consistio en el acercamiento a diveras funciones de RAPiD y de la misma manera familiarizarce con el módulo de entradas y salidas digitales asociado al controlador IRC5 con el fin de  controlar rutinas de trabajo en el manipulador ABB IRB 140.
 
