@@ -1,2 +1,0 @@
-
-El código se basa
