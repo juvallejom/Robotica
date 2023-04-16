@@ -1,4 +1,6 @@
 
+# Explicación de la solución planteada
+
 El código se basa en una actualización al laboratorio #1, en el cual se posee un código para realizar letras por medio de un marcador unido a una herramienta.
 Dicha actualización y objetivo del laboratorio 2, consiste en realizar un sistema controlado a lo realizado, para lo cual se usa un sistema de salidas y entradas que realizará lo ya realizado anteriormente, de manera que, por medio del uso de la herramienta de RAPID, se aplica el uso de botones para realizar procedimientos e instrucciones.
 
