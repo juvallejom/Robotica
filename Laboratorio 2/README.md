@@ -5,6 +5,4 @@ Este laboratorio consistio en el acercamiento a diveras funciones de RAPiD y de 
 
 En la seccion Archivos de Codigo se presentan las simulaciones realizadas en RobotStudio asi como los codigos de programacion de rutinas ( archivo RAPID ) usados para implementar los comandos de movimiendo sobre el manipulador.De igual forma, se incluira una explicación detallada de la generación de las rutinas y la implementación de las entradas digitales como medio de control de estas.
 
-En la seccion Herramientas, se especifica el modelo de la herramienta creado para realizar las acividades propuestas en el laboratorio junto con sus espcificaciones.
-
-Finalmente,en la seccion Videos se disponen las evidencias en formato de video de la implementacion de las rutinsa sobre el manipulador y una explicación detallada del funcionamiento de este.
+En la seccion Videos se disponen las evidencias en formato de video de la implementacion de las rutinsa sobre el manipulador y una explicación detallada del funcionamiento de este.
