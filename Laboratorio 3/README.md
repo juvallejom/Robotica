@@ -1,5 +1,5 @@
 # Laboratorio 3 : Roboitca de Desarrollo e Introduccion a ROS
-<p aling="center">
+<p align="center">
 PUTO
 </p>
 PUTO
