@@ -1,5 +1,7 @@
 # Laboratorio 3 : Roboitca de Desarrollo e Introduccion a ROS
 <p align="center">
-PUTO
+Cristhian David Sandoval Diaz
+Dylan Ortiz Mayorga
+Juan Pablo Vallejo Montañez
 </p>
-PUTO
+
