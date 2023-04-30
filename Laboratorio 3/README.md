@@ -76,10 +76,40 @@ def getkey():
 
 
 ### Función pubVel
+```
+def pubVel(vel_x, ang_z, t):
+    pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
+    rospy.init_node('velPub', anonymous=False)
+    vel = Twist()
+    vel.linear.x = vel_x
+    vel.angular.z = ang_z
+    #rospy.loginfo(vel)
+    endTime = rospy.Time.now() + rospy.Duration(t)
+    while rospy.Time.now() < endTime:
+        pub.publish(vel)
+```
 
 ### Función Reset
+```
+def Reset(x, y, ang):
+    try: 
+        rospy.wait_for_service('/turtle1/teleport_absolute')
+        resetService = rospy.ServiceProxy('/turtle1/teleport_absolute', TeleportAbsolute) 
+        resetVar = resetService(x, y, ang)
+    except rospy.ServiceException as e:
+        print(str(e))
+```
 
 ### Función Spin 
+```
+def Spin(lin, ang):
+    try: 
+        rospy.wait_for_service('/turtle1/teleport_relative')
+        SpinService = rospy.ServiceProxy('/turtle1/teleport_relative', TeleportRelative) 
+        SpinVar = SpinService(lin, ang)
+    except rospy.ServiceException as e:
+        print(str(e))
+```
 
 
 Con las funciones definidas se crean las condiciones de accionamiento (entrada de teclado) dentro de la sección *main* del script.
