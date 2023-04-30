@@ -180,7 +180,7 @@ source devel/setup.bash
 ros run hello_turtle myTeleopKey.py
 ```
 
-![Turtle](turtle.png)
+![Turtle](Turtle.png)
 
 ## Análisis
 
