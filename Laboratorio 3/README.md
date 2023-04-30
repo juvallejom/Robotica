@@ -137,9 +137,31 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
+Para finalizar, se guarda en el script y se incluye en el archivo de texto  *CMakelist.txt*
+
 ## Compilación del Workspace en Catkin
 
-Con la rutina de código finalizada se ejecuta desde una terminal incializada en Catkin
+Con la rutina de código finalizada se ejecuta desde una terminal incializada en *catkin*
+
+Se crea una carpeta *catkin_ws* mediante los comandos 
+
+```
+cd catkin_ws
+mkdir catkin_ws
+```
+Dentro de esta carpta se genera una subcarpeta denomida *src* donde se incluira los arhivos referentes al proyecto *hello_turtle *
+
+```
+mkdir src
+```
+
+Dentro de la dirección *catkin_ws* se implementan los comandos 
+
+```
+source devel/setup.bash
+ros run hello_turtle myTeleopKey.py
+```
+
 
 
 
