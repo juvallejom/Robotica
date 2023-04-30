@@ -1,4 +1,3 @@
-from queue import Empty
 import rospy
 from geometry_msgs.msg import Twist
 from turtlesim.srv import TeleportAbsolute, TeleportRelative
@@ -49,7 +48,7 @@ def Spin(lin, ang):
     except rospy.ServiceException as e:
         print(str(e))
     
-
+catk
 if __name__ == '__main__':
     pubVel(0,0,0.1)
     try:
