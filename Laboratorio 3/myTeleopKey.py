@@ -64,11 +64,9 @@ if __name__ == '__main__':
             if teclado == b'd': 
                pubVel(0,-1,0.1)
             if teclado == b'r': 
-               Reset(5,544445,5,544445,0,000000)
+               Reset(5.544445,5.544445,0.000000)
             if teclado == b' ': 
                Spin(0,np.pi)
-            if teclado == b'c': 
-               clean()
             if teclado == b'f': 
                 break
             
