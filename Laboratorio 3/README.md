@@ -115,7 +115,7 @@ def Reset(x, y, ang):
 
 ### Función Spin 
 
-Función similar a la anterior donde teletransporta, pero esta vez de manera local con unas coordenadas móviles, pide como parámetros un cambio lineal y uno angular, para que haga el giro que deseamos, debemos darle por parámetro un cambio angular de 180° para que tenga el comportamiento deseado, hace uso de la misma librería turtlesim, pero esta vez con TeleportRelative
+Función similar a la anterior donde teletransporta, pero esta vez de manera local con unas coordenadas móviles, pide como parámetros un cambio lineal y uno angular, para que haga el giro que deseamos, debemos darle por parámetro un cambio angular de 180° para que tenga el comportamiento deseado, hace uso de la misma librería turtlesim, pero esta vez con TeleportRelative.
 
 
 ```
