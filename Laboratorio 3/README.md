@@ -9,9 +9,9 @@
  Juan Pablo Vallejo Montañez
 </p>
 
-## Introduccion
+## Introducción
 
-El objetivo de esta practica es conocer los conceptos principales de ROS (Robot Operation System) y como enlazar elementos (nodos) implementando lenguajes de programacion como Python.
+El objetivo de esta practica es conocer los conceptos principales de ROS (Robot Operation System) y como enlazar elementos (nodos) implementando lenguajes de programación como Python.
 
 Para afianzar estos conceptos se trabajara con la herramienta *turtle* diseñada para familiarizarse con el funcionamiento y el uso de paquetes dentro de ROS 
 
@@ -24,3 +24,9 @@ Como primer paso se incializa ROS en una terminal
 ```
 roscore
 ```
+Y de manera paralela se incia el nodo *turtlesim* en otra terminal 
+
+```
+rosrun turtlesim turtlesim_node
+```
+
