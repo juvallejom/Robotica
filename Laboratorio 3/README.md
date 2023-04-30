@@ -186,7 +186,9 @@ ros run hello_turtle myTeleopKey.py
 
 El manejo de las instancias y funciones en Python es mas dispendioso, sin embargo otorga una rigurosidad en la contrucción del código lo cual permite alcanzar operaciones mas complejas entre nodos.
 
-## Conclusiones
+## Enlace de video del funcionamiento
+
+En el siguiente enlace, proporcionamos una explicación del código y de la muestra del funcionamiento con el teclado: https://youtu.be/a8nopwG-z84
 
 
 
