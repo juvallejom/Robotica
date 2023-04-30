@@ -32,7 +32,6 @@ rosrun turtlesim turtlesim_node
 Para realizar la programación mediante un script en Python es necesario incluir las siguientes librerias en la sección incial del código
 
 ```
-from queue import Empty
 import rospy
 from geometry_msgs.msg import Twist
 from turtlesim.srv import TeleportAbsolute, TeleportRelative
@@ -41,7 +40,7 @@ import numpy as np
 
 TERMIOS = termios
 ```
-INCLUIR DESCRICPCION DE LAS LIBRERIAS PLISSSSSSSSS
+En primera instancia, el rospy nos da la libreria general de ROS para phyton, permitiéndonos programar con su interfaz, de ahí, el geometry y el Twist es la parte de librerías necesarias para realizar los movimiento lineales y angulares de la tortuga, notaremos posteriormente que con esta parte se crea la función pubVel que permitirá mover y rotar con W, A, S, D. En turtlesim usamos TeleportAbsolute para teletrasportarlo a unas coordenadas y dirección, es decir, le damos una pose, y esta misma se referirá al reinicio que tiene con la R, por ultimo, para el giro de 180°, usamos el teleportRelative, el cual como se indica es relativo para darle un giro local, el cual recibe 2 parámetros de movimiento lineal y angular, lo usaremos con ESPACE, por último el termios, sys, os se usa para poder obtener la tecla que se presione, se usa con la función getKey, y el numpy usamos np para poder usar el número PI
 
 Se implementan las funciones que permiten las siguientes operaciones:
 
