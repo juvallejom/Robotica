@@ -61,6 +61,8 @@ Se implementan las funciones que permiten las siguientes operaciones:
 
 DESCRIPCION FUNCION KEY 
 
+Función otorgada por la guía, permite obtener la tecla presionada por el usuario para la interpretación de Python.
+
 ```
 def getkey():
     fd = sys.stdin.fileno()
@@ -80,6 +82,10 @@ def getkey():
 
 
 ### Función pubVel
+
+Función que, gracias a la librería geometry_msgs, permite mover de manera lineal y angular la tortuga con velocidades, funciona con 3 parámetros correspondientes a la velocidad lineal, la velocidad angular y el tiempo.
+
+
 ```
 def pubVel(vel_x, ang_z, t):
     pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
@@ -94,6 +100,9 @@ def pubVel(vel_x, ang_z, t):
 ```
 
 ### Función Reset
+
+Función que permite transportar la tortuga a una coordenada y con una dirección, es decir, su pose, con esto, mueve en el sistema de coordenadas fijas y cuando se le insertan los parámetros otorgados canónicamente al empezar el programa se puede teletransportar al centro, es decir, resetearlo, para esto hace uso de la librería turtlesim y de TeleportAbsolute.
+
 ```
 def Reset(x, y, ang):
     try: 
@@ -105,6 +114,10 @@ def Reset(x, y, ang):
 ```
 
 ### Función Spin 
+
+Función similar a la anterior donde teletransporta, pero esta vez de manera local con unas coordenadas móviles, pide como parámetros un cambio lineal y uno angular, para que haga el giro que deseamos, debemos darle por parámetro un cambio angular de 180° para que tenga el comportamiento deseado, hace uso de la misma librería turtlesim, pero esta vez con TeleportRelative
+
+
 ```
 def Spin(lin, ang):
     try: 
