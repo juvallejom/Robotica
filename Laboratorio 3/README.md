@@ -9,7 +9,7 @@
  Juan Pablo Vallejo Montañez
 </p>
 
-# Introduccion
+## Introduccion
 
 
 El objetivo de esta practica es conocer los conceptos principales de ROS (Robot Operation System) y como enlazar elementos (nodos) implementando lenguajes de programacion como Python.
