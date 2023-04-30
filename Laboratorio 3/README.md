@@ -1,4 +1,4 @@
-# Laboratorio 3 : Robotica de Desarrollo e Introduccion a ROS
+# Laboratorio 3 : Robótica de Desarrollo e Introducción a ROS
 <p align="center">
  Cristhian David Sandoval Diaz
 </p>
@@ -11,11 +11,11 @@
 
 ## Introducción
 
-El objetivo de esta practica es conocer los conceptos principales de ROS (Robot Operation System) y como enlazar elementos (nodos) implementando lenguajes de programación como Python.
+El objetivo de esta práctica es conocer los conceptos principales de ROS (Robot Operation System) y como enlazar elementos (nodos) implementando lenguajes de programación como Python y MatLAB.
 
 Para afianzar estos conceptos se trabajara con la herramienta *turtle* diseñada para familiarizarse con el funcionamiento y el uso de paquetes dentro de ROS 
 
-## Metodologia 
+## Metodología 
 
 Para realizar esta actividad introductoria se manejo Python por la facilidad y claridad en la creación de funciones, la posibilidad de construir el código de manera conjunta en la aplicación Visual Code Studio y por la experiencia que se tiene en este lenguaje de programación.
 
@@ -138,3 +138,9 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
+## Compilación del Workspace en Catkin
+
+Con la rutina de código finalizada se ejecuta desde una terminal incializada en Catkin
+
+
+
