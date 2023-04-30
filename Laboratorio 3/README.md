@@ -43,8 +43,8 @@ TERMIOS = termios
 1. **Rospy** : Libreria general de ROS para phyton. Permite programar con su interfaz.
 2. **Geometry** : Librería derivada de *rospy*, la cual provee primitivas para generar elementos como puntos y vectores.
 4. **Twist** : Librería derivada de *Geometry*.Se utiliza para escribir velocidades lineales y angulares.
-5. ** TeleportAbsolute** : Se usa para teletrasnportar el objeto a unas coordenadas dadas y una orientación definida por el usurio.
-6. ** TeleportRelative** : Se implemeta con el fin de realizar una teleportación relativa, la cual se intepreta como un giro del objeto en cuestion.
+5. **TeleportAbsolute** : Se usa para teletrasnportar el objeto a unas coordenadas dadas y una orientación definida por el usurio.
+6. **TeleportRelative** : Se implemeta con el fin de realizar una teleportación relativa, la cual se intepreta como un giro del objeto en cuestion.
 
 
 Se implementan las funciones que permiten las siguientes operaciones:
