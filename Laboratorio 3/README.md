@@ -82,7 +82,7 @@ def getkey():
 ### Función Spin 
 
 
-Con las funcioes definidas se crean las condiciones de accionamiento dentro de la sección *main* del script
+Con las funciones definidas se crean las condiciones de accionamiento (entrada de teclado) dentro de la sección *main* del script.
 
 ```
 if __name__ == '__main__':
