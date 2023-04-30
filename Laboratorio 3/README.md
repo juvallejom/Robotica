@@ -180,6 +180,8 @@ source devel/setup.bash
 ros run hello_turtle myTeleopKey.py
 ```
 
+<img src="/path/to/turtle.png" alt="Alt text" title="Optional title">
+
 ## Análisis
 
 
