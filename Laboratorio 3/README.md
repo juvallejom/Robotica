@@ -40,7 +40,12 @@ import numpy as np
 
 TERMIOS = termios
 ```
-En primera instancia, el rospy nos da la libreria general de ROS para phyton, permitiéndonos programar con su interfaz, de ahí, el geometry y el Twist es la parte de librerías necesarias para realizar los movimiento lineales y angulares de la tortuga, notaremos posteriormente que con esta parte se crea la función pubVel que permitirá mover y rotar con W, A, S, D. En turtlesim usamos TeleportAbsolute para teletrasportarlo a unas coordenadas y dirección, es decir, le damos una pose, y esta misma se referirá al reinicio que tiene con la R, por ultimo, para el giro de 180°, usamos el teleportRelative, el cual como se indica es relativo para darle un giro local, el cual recibe 2 parámetros de movimiento lineal y angular, lo usaremos con ESPACE, por último el termios, sys, os se usa para poder obtener la tecla que se presione, se usa con la función getKey, y el numpy usamos np para poder usar el número PI
+1. **Rospy** : Libreria general de ROS para phyton. Permite programar con su interfaz.
+2. **Geometry** : Librería derivada de *rospy*, la cual provee primitivas para generar elementos como puntos y vectores.
+4. **Twist** : Librería derivada de *Geometry*.Se utiliza para escribir velocidades lineales y angulares.
+5. ** TeleportAbsolute** : Se usa para teletrasnportar el objeto a unas coordenadas dadas y una orientación definida por el usurio.
+6. ** TeleportRelative** : Se implemeta con el fin de realizar una teleportación relativa, la cual se intepreta como un giro del objeto en cuestion.
+
 
 Se implementan las funciones que permiten las siguientes operaciones:
 
@@ -163,6 +168,7 @@ ros run hello_turtle myTeleopKey.py
 ```
 
 
-![Screenshot from 2023-04-29 20-04-52](https://user-images.githubusercontent.com/60625359/235330644-f1e985aa-0c94-4bd2-a400-4457aa18d9c7.png)
+
+
 
 
