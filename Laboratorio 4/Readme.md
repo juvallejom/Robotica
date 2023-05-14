@@ -308,7 +308,7 @@ De esta manera lo que se mande posteriormente con un botón, llegará a esta var
 
 Igualmente se espera que de esta forma el HMI sea lo mayormente separable del archivo python para movimiento para poder configurar y manipular más fácilmente ambos entornos de programación.
 
-#### *ii) Visualización de Imagenes**
+##### *ii) Visualización de Imagenes**
 
   ```
 def mostrar_imagen():
@@ -329,7 +329,7 @@ def mostrar_imagen():
  ```
 En esta función, de acuerdo al número que se ingresa, muestra la imagen de la pose en cuestión.
 
-#### *iii) Entorno de la ventana*
+##### *iii) Entorno de la ventana*
   ```
 # Crear la ventana principal
 ventana = tk.Tk()
@@ -352,24 +352,34 @@ contenedor_derecha = tk.Frame(ventana)
 contenedor_derecha.pack(side=tk.LEFT, padx=10, pady=10)
   ```
 
-Con lo anterior, primero se debe crear la ventana de trabajo, la cual se le da las dimensiones y la que se genera desde la librería, de ahi se divide en Frames, que son las subdivisiones en la cual se pondrá la información y los distintos elementos como imágenes o Labels, se divide en 3 frames, una a la izquierda, otra al centro y una a la derecha, para así dividir el HMI en 3 columnas.
+Se crea la ventana de trabajo  la cual se divide en 3 frames, que son las subdivisiones en la cual se pondrá la información y los distintos elementos como imágenes o Labels.
 
 En la columna de la izquierda se ubica el logo de la universidad, la información de los integrantes del grupo y un frame adicional que contiene la caja de entrada y su texto en donde el usuario pondrá el número de la pose que desea tener, ademas del boton el cual hará mover el robot y posteriormente colocar la imagen relacionada.
 
-En el frame central se ubica la imagen que se tiene de acuerdo a la pose indicada, esta imagen se actualizará una vez se termine de mover el robot, de manera que toda la información, tanto imagen como datos de ángulos reales se muestra una vez terminado de mover el phantom x, por último en el frame de la derecha se posee el espacio para los ángulos reales, donde se le posiciona un label y luego un espacio de texto, el cual reacciona con la función inicial de llamar al otro archivo python, es decir, muestra ahí todo lo que el archivo python imprimió en terminal.
+En el frame central se ubica la imagen que se tiene de acuerdo a la pose indicada, esta imagen se actualizará una vez se termine de mover el robot, de manera que toda la información, tanto imagen como datos de ángulos reales se muestra una vez terminado de mover el Phantom X.
+
+Por último en el frame de la derecha se muestran los ángulos reales, donde se le posiciona un label y luego un espacio de texto, el cual reacciona con la función inicial de llamar a *lab4.py*, es decir, muestra  todo lo que *lab4.py* imprimió en terminal.
 
 ## 3.RESULTADOS
 
 Para empezar a realizar lo realizado, primero debemos correr ROS con el comando.
+
+  ```
 roscore
+  ```
+Luego, en una terminal diferente, y ubicado en el workspace del catkin, se corre el dynamixel one motor una vez desconectado del dynamixel y con el setup.bash ejecutado.
 
-Luego, en una terminal diferente, y ubicado en el workspace del catkin, debemos correr el dynamixel one motor, por medio del siguiente comando, y una vez desconectado del dynamixel y con el setup.bash ejecutado.
+  ```
 roslaunch dynamixel_one_motor one_controller.launch
+  ```
 
-Y por último nos ubicamos en la carpeta scripts donde tenemos ubicado el archivo HMI, de manera que si nuestro archivo se llama “hmi.py” tenemos el siguiente comando.
+Y por último se dirige a la carpeta scripts donde se ubica el archivo HMI, de manera que si nuestro archivo se llama “hmi.py” tenemos el siguiente comando.
+
+  ```
 python hmi.py
-
-Esto nos abrirá la nueva ventana donde podemos observar la HMI creada y donde el programa estará listo para mover el Phantom X dada la pose que le indiquemos.
+  ```
+  
+Se abrirá la nueva ventana donde se observa la HMI creada y donde el programa estará listo para mover el Phantom X dada la pose que le indique el usuario.
 
 
 
