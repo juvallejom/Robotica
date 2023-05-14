@@ -360,7 +360,7 @@ En el frame central se ubica la imagen que se tiene de acuerdo a la pose indicad
 
 Por último en el frame de la derecha se muestran los ángulos reales, donde se le posiciona un label y luego un espacio de texto, el cual reacciona con la función inicial de llamar a *lab4.py*, es decir, muestra  todo lo que *lab4.py* imprimió en terminal.
 
-## 3.RESULTADOS
+## 3.Ejecución y resultados.
 
 Para empezar a realizar lo realizado, primero debemos correr ROS con el comando.
 
