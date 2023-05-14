@@ -26,10 +26,13 @@ Con las dimensiones de los eslabones establecidas se define la posición de home
 
 
 <p align="center">
- <img width="60%" align="center" src="Imagenes/DH.png"/>
+  <img width="60%" align="center" src="Imagenes/DH.png"/>
+ </p>
+<p align="center">
+  <em>Figura 1 : Matriz de Denavit-Hartenberg para el robot Phantom x Pincher en su posición de home</em>
+ </p>
  
- <em>Figura 1 : Matriz de Denavit-Hartenberg para el robot Phantom x Pincher en su posición de home</em>
-</p>
+
 
 Se definen las longitudes de los eslabones en milímetros *(mm)* con los siguientes valores :
 
