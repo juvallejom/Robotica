@@ -64,40 +64,7 @@ Finalmente se establecen  5 poses deseadas del robot, donde la primera correspon
 Para definir los ángulos de las articualaciones de las poses restantes se toman respecto a los valores de cada una de las 4 articulaciones en la posición de home. Para la quinta articulación (asociada al movimiento del gripper) se definen valores arbitrarios. Los valores de las articulaciones para cada pose se registran en la *Figura 2*
 
 
-<p align="center">
-  <img width="60%" align="center" src="Imagenes/1.jpeg"/>
- </p>
-<p align="center">
-  <em>Figura 2 : Posición de Home </em>
- </p>
- 
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/2.jpeg"/>
- </p>
-<p align="center">
-  <em>Figura 2 : Pose N°2 </em>
- </p>
- 
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/3.jpeg"/>
- </p>
-<p align="center">
-  <em>Figura 2 : Pose N°3 </em>
- </p>
- 
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/4.jpeg"/>
- </p>
-<p align="center">
-  <em>Figura 2 : Pose N°4 </em>
- </p>
 
-<p align="center">
-  <img width="60%" align="center" src="Imagenes/5.jpeg"/>
- </p>
-<p align="center">
-  <em>Figura 2 : Pose N°5 </em>
- </p>
 
 
 FIGURA 2
@@ -428,5 +395,41 @@ Se abrirá la nueva ventana donde se observa la HMI creada y donde el programa e
 
 
 
+A continuación se muestra la aplicación de las rutinas en el Pincher.
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/1.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Posición de Home </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/2.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°2 </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/3.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°3 </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/4.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°4 </em>
+ </p>
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/5.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°5 </em>
+ </p>
 
 
