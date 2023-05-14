@@ -63,6 +63,14 @@ Finalmente se establecen  5 poses deseadas del robot, donde la primera correspon
 
 Para definir los ángulos de las articualaciones de las poses restantes se toman respecto a los valores de cada una de las 4 articulaciones en la posición de home. Para la quinta articulación (asociada al movimiento del gripper) se definen valores arbitrarios. Los valores de las articulaciones para cada pose se registran en la *Figura 2*
 
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/1.png"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Posición de Home </em>
+ </p>
+
 FIGURA 2
 
 Se usa nuevamente MATLAB para visualizar las poses definidas anteoriormente. Se inicializan los valores de las articulaciones *q* para cada una de las poses.
