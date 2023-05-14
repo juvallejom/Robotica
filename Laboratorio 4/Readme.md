@@ -65,9 +65,40 @@ Para definir los ángulos de las articualaciones de las poses restantes se toman
 
 
 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q1.png"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Posición de Home </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q2.png"/>
+ </p>
+<p align="center">
+  <em>Figura 3 : Pose N°2 </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q3.png"/>
+ </p>
+<p align="center">
+  <em>Figura 4 : Pose N°3 </em>
+ </p>
 
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/q4.png"/>
+ </p>
+<p align="center">
+  <em>Figura 5 : Pose N°4 </em>
+ </p>
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q5.png"/>
+ </p>
+<p align="center">
+  <em>Figura 6 : Pose N°5 </em>
+ </p>
 
-FIGURA 2
 
 Se usa nuevamente MATLAB para visualizar las poses definidas anteoriormente. Se inicializan los valores de las articulaciones *q* para cada una de las poses.
 
@@ -401,35 +432,35 @@ A continuación se muestra la aplicación de las rutinas en el Pincher.
   <img width="60%" align="center" src="Imagenes/1.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 2 : Posición de Home </em>
+  <em>Figura 7 : Posición de Home </em>
  </p>
  
  <p align="center">
   <img width="60%" align="center" src="Imagenes/2.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 2 : Pose N°2 </em>
+  <em>Figura 8 : Pose N°2 </em>
  </p>
  
  <p align="center">
   <img width="60%" align="center" src="Imagenes/3.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 2 : Pose N°3 </em>
+  <em>Figura 9 : Pose N°3 </em>
  </p>
  
  <p align="center">
   <img width="60%" align="center" src="Imagenes/4.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 2 : Pose N°4 </em>
+  <em>Figura 10 : Pose N°4 </em>
  </p>
 
 <p align="center">
   <img width="60%" align="center" src="Imagenes/5.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 2 : Pose N°5 </em>
+  <em>Figura 11 : Pose N°5 </em>
  </p>
 
 
