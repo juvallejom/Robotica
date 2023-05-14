@@ -463,4 +463,4 @@ A continuación se muestra la aplicación de las rutinas en el Pincher.
   <em>Figura 11 : Pose N°5 </em>
  </p>
 
-
+En la Carpetea *Videos*, se inlcuyen las evidencias del funcionamiento.
