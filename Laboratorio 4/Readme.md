@@ -23,15 +23,12 @@ X Pincher y usar tópicos de estado, servicios y comando para todos los Joint Co
 Inicialmente se identifica la cadena cinemática del robot y se determinan la longitud de los eslabones que la componen.
 Con las dimensiones de los eslabones establecidas se define la posición de home, y posteriormente se calcula la matriz Denavit-Hartenberg (DH) teninedo en cuenta los offsets para cada articulación. *Ver Figura 1.* 
 
-Se definen las longitudes de la siguiente manera :
+Se definen las longitudes de los eslabones en milímetros con los siguientes valores :
 
-- L1:
+- L1: 134.2
+- L2: 105.2
+- L3: 105.2
+- L4: 67.5
 
-
-Como se observa, se calculan unas distancias L1, L2, L3 y L4, se miden por medio de un calibrador al pincher directamente y se obtienen los siguientes valores (en mm):
-L1: 134.2
-L2: 105.2
-L3: 105.2
-L4: 67.5
 
 
