@@ -264,16 +264,20 @@ El main, construido a partir de las funciones anteriores, sigue las siguientes i
 - Se ajusta el límite de torque para cada una de las 5 articulaciones
 - Para cualquier rutina :
  - Se dirigirá el Pincher a su posición de home desde la posición en donde se encuentre por medio del **JointCommand**.
- - Estando en home, cada articulación se moverá con la función *Moving* hasta el valor definido para  la pose deseada. En esta instrucción, la secuencia de movimiento de los motores es descendente; es decir, primero se moverá la articulación, y de ultima la articulacioón 1. La filosofía detras de esto es evitar choques entre el robot y la plataforma (tablero), por esto se buscar ajusta desde el extrémo del robot para que cuando haga los movimientos con mayor probabulidad de choque, no tenga riesgo con el resto del cuerpo del pincher. 
+ - Estando en home, cada articulación se moverá con la función *Moving* hasta el valor definido para la pose deseada. En esta instrucción, la secuencia de movimiento de los motores es descendente; es decir, primero se moverá la articulación 5 , y de ultima la articulacioón 1. La filosofía detras de esto es evitar choques entre el robot y la plataforma (tablero), por esto se busca ajustar desde el extrémo del robot para que cuando haga los movimientos con mayor probabilidad de choque, no tenga riesgo con el resto del cuerpo del pincher. 
 - Por último se imprimen los ángulos reales para que el usuario pueda observarlos.
 
 
-HMI
+#### f) HMI
 
-De acuerdo a los objetivos de aprendizaje se desea un buena interfaz gráfica HMI, de manera que para el usuario no deba usar la terminal, sino tenga un mejor entorno de entendimiento e interacción con el programa, para esto se hace uso de un archivo externo de python, el cual crea la interfaz y la conecta con el archivo python existente, para esto, lo que se hace es llamar el archivo python, darle una entrada (es decir, el valor de la pose que el usuario desea) y luego trae lo que está impreso en terminal para mostrarlo en una mejor interfaz gráfica, la librería usada para realizar esta HMI es tkinter, la cual establece una nueva ventana, la que se modifica y arregla, el código se explica de la siguiente manera.
+De acuerdo a los objetivos de aprendizaje se desea implementar una interfaz gráfica HMI para que  el usuario no deba usar la terminal, sino que tenga un mejor entorno de comprensión e interacción con el sistema. P
 
-Llamar el archivo python
+Para esto se implementa un archivo externo de Python, el cual crea la interfaz y la conecta con el archivo python existente *lab4.py*.
+Se  llama el archivo python, y se asigna una entrada (es decir, el valor de la pose que el usuario desea) y luego trae lo que está impreso en terminal para mostrarlo de manera gráfica. La librería usada para realizar esta HMI es **tkinter**, la cual establece una nueva ventana, la que se modifica. Las funciones de la HMI se explican acontinuación.
 
+##### Llamar el archivo python
+
+ ```
 # Obtén la ruta absoluta del directorio actual
 directorio_actual = os.path.dirname(os.path.abspath(__file__))
 
@@ -295,6 +299,7 @@ def ejecutar_otro_archivo(entrada):
     # Actualiza la salida en la interfaz gráfica
     texto_salida.delete(1.0, tk.END)
     texto_salida.insert(tk.END, salida)
+  ```
 
 De esta manera y con ayuda de 2 librerias de más, inicialmente se ubica en la ubicación del archivo actual para poder llamar otro archivo python que es el que se presentó anteriormente y que está ubicado en la misma carpeta que este nuevo archivo python de HMI, además, es necesario que para poder pasar la información al otro archivo python, se encuentre una linea así:
 entrada = int(sys.argv[1])
@@ -348,7 +353,7 @@ En la columna de la izquierda se ubica el logo de la universidad, la informació
 
 En el frame central se ubica la imagen que se tiene de acuerdo a la pose indicada, esta imagen se actualizará una vez se termine de mover el robot, de manera que toda la información, tanto imagen como datos de ángulos reales se muestra una vez terminado de mover el phantom x, por último en el frame de la derecha se posee el espacio para los ángulos reales, donde se le posiciona un label y luego un espacio de texto, el cual reacciona con la función inicial de llamar al otro archivo python, es decir, muestra ahí todo lo que el archivo python imprimió en terminal.
 
-RESULTADOS
+## 3.RESULTADOS
 
 Para empezar a realizar lo realizado, primero debemos correr ROS con el comando.
 roscore
