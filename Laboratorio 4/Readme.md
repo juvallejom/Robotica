@@ -171,9 +171,9 @@ Además se establecen los valores de los ángulos en grados como se mostró en l
 
 Luego de esto se crea la variable de pose real, la cual será dinámica y corresponderá a la que se entregue como ángulo real.
 
-#### Funciones implementadas en el script de Python.
+#### 2.3.1 Funciones implementadas en el script de Python.
 
-Movimiento de articulaciones
+##### i) Movimiento de articulaciones
 
 def jointCommand(command, id_num, addr_name, value, time):
     rospy.wait_for_service('dynamixel_workbench/dynamixel_command')
