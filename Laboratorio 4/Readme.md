@@ -18,4 +18,7 @@ X Pincher y usar tópicos de estado, servicios y comando para todos los Joint Co
 
 ## Metodología 
 
+### Caracterización del Robot Phantom X Pincher
+
+
 
