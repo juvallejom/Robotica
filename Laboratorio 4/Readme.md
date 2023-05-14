@@ -1,4 +1,4 @@
-<p allign="center">
+<p align="center">
 ## Laboratorio 4 : Robótica de Desarroll y Cinematica Directa 
 </p>
 <p align="center">
