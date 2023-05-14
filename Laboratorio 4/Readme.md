@@ -1,4 +1,4 @@
-# Laboratorio 3 : Robótica de Desarrollo e Introducción a ROS
+# Laboratorio 4 : Robótica de Desarroll y Cinematica Directa 
 <p align="center">
  Cristhian David Sandoval Diaz
 </p>
