@@ -24,7 +24,9 @@ Inicialmente se identifica la cadena cinemática del robot y se determinan la lo
 Con las dimensiones de los eslabones establecidas se define la posición de home, y posteriormente se calcula la matriz Denavit-Hartenberg (DH) teninedo en cuenta los offsets para cada articulación. *Ver Figura 1.* 
 
 ![Matriz de Denavit-Hartenberg](Imagenes/DH.png)
-FIGURA 1
+<p align="center">
+  *Matriz de Denavit-Hartenberg para el robot Phantom x Pincher en su posición de home*
+</p>
 
 Se definen las longitudes de los eslabones en milímetros *(mm)* con los siguientes valores :
 
