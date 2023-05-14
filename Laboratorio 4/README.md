@@ -466,4 +466,4 @@ A continuación se muestra la aplicación de las rutinas en el Pincher.
 En la Carpetea *Videos*, se inlcuyen las evidencias del funcionamiento.
 
 Laboratorio 4/Videos
-[Carpeta Videos](Laboratorio 4/Videos)
+[Video](Laboratorio 4/Videos)
