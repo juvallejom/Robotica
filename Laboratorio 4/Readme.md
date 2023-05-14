@@ -70,6 +70,35 @@ Para definir los ángulos de las articualaciones de las poses restantes se toman
 <p align="center">
   <em>Figura 2 : Posición de Home </em>
  </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/2.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°2 </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/3.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°3 </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/4.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°4 </em>
+ </p>
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/5.jpeg"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Pose N°5 </em>
+ </p>
+
 
 FIGURA 2
 
