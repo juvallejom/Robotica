@@ -25,7 +25,7 @@ Con las dimensiones de los eslabones establecidas se define la posición de home
 
 Se definen las longitudes de la siguiente manera :
 
-*L1:
+- L1:
 
 
 Como se observa, se calculan unas distancias L1, L2, L3 y L4, se miden por medio de un calibrador al pincher directamente y se obtienen los siguientes valores (en mm):
