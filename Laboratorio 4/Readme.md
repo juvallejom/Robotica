@@ -1,5 +1,5 @@
 <p allign="center">
-# Laboratorio 4 : Robótica de Desarroll y Cinematica Directa 
+## Laboratorio 4 : Robótica de Desarroll y Cinematica Directa 
 </p>
 <p align="center">
  Cristhian David Sandoval Diaz
