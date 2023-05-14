@@ -22,5 +22,5 @@ X Pincher y usar tópicos de estado, servicios y comando para todos los Joint Co
 
 Inicialmente se identifica la cadena cinemática del robot y se determinan la longitud de los eslabones que la componen.
 Con las dimensiones de los eslabones establecidas se define la posición de home, y posteriormente se calcula la matriz Denavit-Hartenberg (DH) teninedo en cuenta los offsets para cada articulación. *Ver Figura 1.* 
-Inicialmente se calcula la forma de home deseada para el phantom x, y posteriormente a ello se calcula su respectiva matriz DH con sus respectivos offsets, como se observa en la siguiente imagen, se tiene la forma que se usará de home con su respectiva matriz
+
 
