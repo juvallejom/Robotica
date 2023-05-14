@@ -23,7 +23,7 @@ X Pincher y usar tópicos de estado, servicios y comando para todos los Joint Co
 Inicialmente se identifica la cadena cinemática del robot y se determinan la longitud de los eslabones que la componen.
 Con las dimensiones de los eslabones establecidas se define la posición de home, y posteriormente se calcula la matriz Denavit-Hartenberg (DH) teninedo en cuenta los offsets para cada articulación. *Ver Figura 1.* 
 
-<img width="60%" align="center" src="Imagenes/DH.png" alt= "*Figura 1 : Matriz de Denavit-Hartenberg para el robot Phantom x Pincher en su posición de home*"/>
+<img width="60%" align="center" src="Imagenes/DH.png" title="Figura 1"/>
 
 ![Alt Matriz de Denavit-Hartenberg](Imagenes/DH.png)
 <p align="center">
