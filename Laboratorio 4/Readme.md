@@ -173,8 +173,9 @@ Luego de esto se crea la variable de pose real, la cual será dinámica y corres
 
 #### 2.3.1 Funciones implementadas en el script de Python.
 
-##### i) Movimiento de articulaciones
+##### a) Movimiento de articulaciones
 
+```
 def jointCommand(command, id_num, addr_name, value, time):
     rospy.wait_for_service('dynamixel_workbench/dynamixel_command')
     try:        
@@ -184,11 +185,13 @@ def jointCommand(command, id_num, addr_name, value, time):
         return result.comm_result
     except rospy.ServiceException as exc:
         print(exc)
+ ```
 
-función obtenida de las librerías de dynamixel, usa los servicios de dynamixel command para poder principalmente, mover las articulaciones, dando un ID, el comando que sea el de mover la articulación y un valor objetivo al cual llegar en un tiempo determinado, por medio del addr_name de “Goal_Position“ se consigue mover la articulación, de igual manera con este comando se le otorga un límite al torque de las articulaciones, por medio del comando “Torque_Limit” . Esta es la principal función para cambiar la posición de los motores del pincher y recibe los valores análogos.
+Función obtenida de las librerías de dynamixel, usa los servicios de **dynamixel command** para mover las articulaciones, dando un ID, el comando que sea el de mover la articulación y un valor objetivo al cual llegar en un tiempo determinado, por medio del addr_name de “Goal_Position“ se consigue mover la articulación, de igual manera con este comando se le otorga un límite al torque de las articulaciones, por medio del comando “Torque_Limit” . Esta es la principal función para cambiar la posición de los motores del pincher y recibe los valores análogos.
 
-Lectura de información.
+#### b)Lectura de información.
 
+ ```
 def callback(data):
     global realPose
     realPose=np.multiply(data.position,180/pi)
@@ -196,29 +199,37 @@ def callback(data):
 def listener():
     rospy.init_node('joint_listener', anonymous=True)
     rospy.Subscriber("/dynamixel_workbench/joint_states", JointState,callback)
+ ```
 
-Por medio de estas 2 funciones, se realiza un subscribe para poder leer la información por parte de las articulaciones, se guarda en la pose real, se arreglan los ángulos a grados y se corrige el offset de 90 grados en la segunda articulación, para de esta manera poder tener una correcta lectura de datos por parte de los motores.
+Por medio de estas 2 funciones, se realiza un *subscribe* para leer la información por parte de las articulaciones. Se guarda en la *pose real*, se convierten los ángulos a grados y se corrige el offset de 90 grados en la segunda articulación, para tener una correcta lectura de datos por parte de los servomotores.
 
-Muestra ángulos reales.
+#### c)Muestra ángulos reales.
 
+ ```
 def printReal(real):
     print('\nÁngulos reales:\n')
     for i in range (len(real)):
         print(f'{str(i + 1)}: ' + "%.2f" % real[i] +'\n' )
+  ```
 
-Por medio de la sencilla función, y por medio de un bucle se imprime en terminal cada uno de los 5 ángulos reales que poseen las articulaciones.
+Se imprime en terminal cada uno de los 5 ángulos reales que poseen las articulaciones.
 
-Función de movimiento.
+#### d)Función de movimiento.
 
+ ```
 def Moving(j,Goal,Actual):
     N=5
     delta=((Goal-Actual)/N)
     for i in range(N):
         jointCommand('', (j+1), 'Goal_Position', int(Actual+delta*(i+1)), 0.5)
         time.sleep(0.1)
+  ```
 
-Por medio de un número de pasos, se pasa desde un pose anterior a una nueva pose por medio de la primera función y el uso de Goal_Position, donde de acuerdo a un ID mencionado cada articulación posee 5 pasos para moverse a la posición deseada.
+Por medio de un número de pasos, se pasa desde un pose anterior a una nueva pose por medio de la primera función y el uso de Goal_Position, donde de acuerdo a un ID mencionado cada articulación posee 5 pasos para moverse a la posición deseada. ( CORREGIR REDACCION ACA)
 
+#### e)Función Main
+
+ ```
 Main:
 if __name__ == '__main__':
     try:
@@ -247,8 +258,14 @@ if __name__ == '__main__':
         pass
 
 
-
-En el main, el cual es lo que hace nuestro sistema con la información y funciones anteriores, primero llama al listener, es decir, que activa el subscriber para poder recibir información y tener lectura de datos, luego se le ajusta el límite en torque para cada una de las 5 articulaciones, para la rutina que deseamos, primero se dirigirá al home desde la posición en donde se encuentre, por medio del JointCommand, y luego de estar en home, para cada articulación se moverá con la función Moving hacia la pose deseada, en este último proceso, debido a que pasa de home, primero se moverá desde la punta del pincher hasta la base, es decir desde la articulación 5 hasta la 1 por último, esto con el objetivo de que como está definido el home, depende la pose deseada, si primero se moviese la articulación 2, podría hacer chocar al pincher con la plataforma, para esto, primero se ajusta desde la esquina para que cuando haga los movimientos que más podrían causar un choque, no tenga riesgo con el resto del cuerpo del pincher. Por último se imprimen los ángulos reales para que el usuario pueda observarlos.
+ ```
+El main, construido a partir de las funciones anteriores, sigue las siguientes instrucciones.
+- Primero llama al listener, es decir, se activa el subscriber para poder recibir información y tener lectura de datos.
+- Se ajusta el límite de torque para cada una de las 5 articulaciones
+- Para cualquier rutina :
+ - Se dirigirá el Pincher a su posición de home desde la posición en donde se encuentre por medio del **JointCommand**.
+ - Estando en home, cada articulación se moverá con la función *Moving* hasta el valor definido para  la pose deseada. En esta instrucción, la secuencia de movimiento de los motores es descendente; es decir, primero se moverá la articulación, y de ultima la articulacioón 1. La filosofía detras de esto es evitar choques entre el robot y la plataforma (tablero), por esto se buscar ajusta desde el extrémo del robot para que cuando haga los movimientos con mayor probabulidad de choque, no tenga riesgo con el resto del cuerpo del pincher. 
+- Por último se imprimen los ángulos reales para que el usuario pueda observarlos.
 
 
 HMI
