@@ -65,7 +65,7 @@ Para definir los ángulos de las articualaciones de las poses restantes se toman
 
 
 <p align="center">
-  <img width="60%" align="center" src="Imagenes/1.png"/>
+  <img width="60%" align="center" src="Imagenes/1.jpeg"/>
  </p>
 <p align="center">
   <em>Figura 2 : Posición de Home </em>
