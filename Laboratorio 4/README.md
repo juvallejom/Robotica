@@ -463,8 +463,5 @@ A continuación se muestra la aplicación de las rutinas en el Pincher.
   <em>Figura 11 : Pose N°5 </em>
  </p>
 
-En la Carpetea *Videos*, se inlcuyen las evidencias del funcionamiento.
-
-Laboratorio 4/Videos
-
-([Laboratorio 4/Videos](https://github.com/juvallejom/Rob-tica/tree/0427d87d040c1b32f62029b1ccdb074e060fbaa6/Laboratorio%204/Videos))
+Se inlcuyen las evidencias del funcionamiento en 
+[Laboratorio 4/Videos](https://github.com/juvallejom/Rob-tica/tree/0427d87d040c1b32f62029b1ccdb074e060fbaa6/Laboratorio%204/Videos)
