@@ -165,17 +165,15 @@ Luego, cuando se ejecute, debe estar desconectado el dynamixel. Y por último se
 
 ### 2.3 Implementación en Python 
 
-PYTHON
+Se importan los recursos necesarios y se establecen los valores de los torques límites para los servomotores. Es importante no asignar un valor tan alto para evitar sobrecargar a los servomotores, sin embargo este valor tampoco debe ser tan bajo como par no soportar el peso y movimientos que se desee. (posteriormente se verá su implementación con la función jointcommand -- PONER O CAMBIAR).
 
-Pasando al código en python, se importan los recursos necesarios y se establecen los valores de los torques límites que se pondrán, esto para no sobrecargar a los motores y no mandarlos al límite, sin embargo este valor tampoco debe ser tan bajo como par no soportar el peso y movimientos que se realicen en el laboratorio, posteriormente se verá su implementación con la función jointcommand.
-
-Además establecemos los valores de los ángulos en grados como se mostró anteriormente en la tabla, y adicionalmente a esto, según el dynamixel, este se maneja con valores análogos, es decir de 0 a 1023, por esto se debe traducir cada ángulo de cada articulación en valor análogo, para esto, se hace uso del Dynamixel para poder obtener estos valores de manera directa, y son estos con los que se trabajará en el python para transmisión de información.
+Además se establecen los valores de los ángulos en grados como se mostró en la *Figura 2* y se convierten a una escala de valores análogos (0 a 1023) con los que Dynamixel trabajará.
 
 Luego de esto se crea la variable de pose real, la cual será dinámica y corresponderá a la que se entregue como ángulo real.
 
-Ahora tenemos la lista de funciones:
+#### Funciones implementadas en el script de Python.
 
-Movimiento de articulaciones.
+Movimiento de articulaciones
 
 def jointCommand(command, id_num, addr_name, value, time):
     rospy.wait_for_service('dynamixel_workbench/dynamixel_command')
