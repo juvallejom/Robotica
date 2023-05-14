@@ -308,7 +308,7 @@ De esta manera lo que se mande posteriormente con un botón, llegará a esta var
 
 Igualmente se espera que de esta forma el HMI sea lo mayormente separable del archivo python para movimiento para poder configurar y manipular más fácilmente ambos entornos de programación.
 
-##### *ii) Visualización de Imagenes**
+##### *ii) Visualización de Imagenes*
 
   ```
 def mostrar_imagen():
