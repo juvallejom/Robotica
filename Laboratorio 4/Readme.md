@@ -145,7 +145,7 @@ joint_5:
   Return_Delay_Time: 0
 ```
 
-Después de esto, se salvan los cambios. En  la carpeta **“scripts”** hay 3 archivos (inicialmente sirven para entender funciones del código python que se explicará más adelante, de momento REMITIR A DONDE DYLAN DICE) los cuales se  eliminan y se guardan los siguientes archivos nuevos.
+Después de esto, se salvan los cambios. En  la carpeta **“scripts”** hay 3 archivos los cuales se  eliminan y se guardan los siguientes archivos nuevos.
 - Archivo python lab4.py : Archivo de codigo donde estara toda la información de movimiento, análisis, lectura de datos y transmisión de datos entre las articulaciones.
 - Archivo HMI  : Contiene la interfaz gráfica para el usuario,
 - Archivos de imagen necesarios para la implementación de la *Interfaz Humano Maquina*.
@@ -189,7 +189,7 @@ def jointCommand(command, id_num, addr_name, value, time):
 
 Función obtenida de las librerías de dynamixel, usa los servicios de **dynamixel command** para mover las articulaciones, dando un ID, el comando que sea el de mover la articulación y un valor objetivo al cual llegar en un tiempo determinado, por medio del addr_name de “Goal_Position“ se consigue mover la articulación, de igual manera con este comando se le otorga un límite al torque de las articulaciones, por medio del comando “Torque_Limit” . Esta es la principal función para cambiar la posición de los motores del pincher y recibe los valores análogos.
 
-#### b)Lectura de información.
+#### b) Lectura de información.
 
  ```
 def callback(data):
@@ -203,7 +203,7 @@ def listener():
 
 Por medio de estas 2 funciones, se realiza un *subscribe* para leer la información por parte de las articulaciones. Se guarda en la *pose real*, se convierten los ángulos a grados y se corrige el offset de 90 grados en la segunda articulación, para tener una correcta lectura de datos por parte de los servomotores.
 
-#### c)Muestra ángulos reales.
+#### c) Muestra ángulos reales.
 
  ```
 def printReal(real):
@@ -214,7 +214,7 @@ def printReal(real):
 
 Se imprime en terminal cada uno de los 5 ángulos reales que poseen las articulaciones.
 
-#### d)Función de movimiento.
+#### d) Función de movimiento.
 
  ```
 def Moving(j,Goal,Actual):
@@ -227,7 +227,7 @@ def Moving(j,Goal,Actual):
 
 Por medio de un número de pasos, se pasa desde un pose anterior a una nueva pose por medio de la primera función y el uso de Goal_Position, donde de acuerdo a un ID mencionado cada articulación posee 5 pasos para moverse a la posición deseada. ( CORREGIR REDACCION ACA)
 
-#### e)Función Main
+#### e) Función Main
 
  ```
 Main:
@@ -264,18 +264,18 @@ El main, construido a partir de las funciones anteriores, sigue las siguientes i
 - Se ajusta el límite de torque para cada una de las 5 articulaciones
 - Para cualquier rutina :
  - Se dirigirá el Pincher a su posición de home desde la posición en donde se encuentre por medio del **JointCommand**.
- - Estando en home, cada articulación se moverá con la función *Moving* hasta el valor definido para la pose deseada. En esta instrucción, la secuencia de movimiento de los motores es descendente; es decir, primero se moverá la articulación 5 , y de ultima la articulacioón 1. La filosofía detras de esto es evitar choques entre el robot y la plataforma (tablero), por esto se busca ajustar desde el extrémo del robot para que cuando haga los movimientos con mayor probabilidad de choque, no tenga riesgo con el resto del cuerpo del pincher. 
+ - Estando en home, cada articulación se moverá con la función *Moving* hasta el valor definido para la pose deseada. En esta instrucción, la secuencia de movimiento de los motores es descendente; es decir, primero se moverá la articulación 5 , y de ultima la articulacioón 1. La filosofía detras de esto es evitar choques entre el robot y la plataforma (tablero), por esto se busca ajustar desde el extrémo del robot hasta la base para que cuando haga los movimientos con mayor probabilidad de choque, no tenga riesgo el cuerpo del pincher. 
 - Por último se imprimen los ángulos reales para que el usuario pueda observarlos.
 
 
 #### f) HMI
 
-De acuerdo a los objetivos de aprendizaje se desea implementar una interfaz gráfica HMI para que  el usuario no deba usar la terminal, sino que tenga un mejor entorno de comprensión e interacción con el sistema. P
+De acuerdo a los objetivos de aprendizaje se desea implementar una interfaz gráfica HMI para que  el usuario no deba usar la terminal, sino que tenga un mejor entorno de comprensión e interacción con el sistema. 
 
 Para esto se implementa un archivo externo de Python, el cual crea la interfaz y la conecta con el archivo python existente *lab4.py*.
 Se  llama el archivo python, y se asigna una entrada (es decir, el valor de la pose que el usuario desea) y luego trae lo que está impreso en terminal para mostrarlo de manera gráfica. La librería usada para realizar esta HMI es **tkinter**, la cual establece una nueva ventana, la que se modifica. Las funciones de la HMI se explican acontinuación.
 
-##### Llamar el archivo python
+##### *i) Llamar el archivo python*
 
  ```
 # Obtén la ruta absoluta del directorio actual
@@ -301,13 +301,16 @@ def ejecutar_otro_archivo(entrada):
     texto_salida.insert(tk.END, salida)
   ```
 
-De esta manera y con ayuda de 2 librerias de más, inicialmente se ubica en la ubicación del archivo actual para poder llamar otro archivo python que es el que se presentó anteriormente y que está ubicado en la misma carpeta que este nuevo archivo python de HMI, además, es necesario que para poder pasar la información al otro archivo python, se encuentre una linea así:
+Inicialmente se dirige a  la ubicación del archivo actual para poder al archivo *lab4.py* que está ubicado en la misma carpeta que este nuevo archivo python de HMI.
+Además, es necesario que para poder pasar la información al otro archivo python, se encuentre una linea así:
 entrada = int(sys.argv[1])
-De esta manera lo que se mande posteriormente con un botón, llegará a esta variable entrada y se ubicará ya en el otro archivo python.
+De esta manera lo que se mande posteriormente con un botón, llegará a esta variable entrada y se ubicará en *lab4.py*.
 
 Igualmente se espera que de esta forma el HMI sea lo mayormente separable del archivo python para movimiento para poder configurar y manipular más fácilmente ambos entornos de programación.
 
-Para poner imagenes.
+#### *ii) Visualización de Imagenes**
+
+  ```
 def mostrar_imagen():
     numero = int(entry_numero.get())
 
@@ -323,10 +326,11 @@ def mostrar_imagen():
     # Mostrar la imagen
     imagen_label.config(image=imagen)
     imagen_label.image = imagen
+ ```
+En esta función, de acuerdo al número que se ingresa, muestra la imagen de la pose en cuestión.
 
-En esta función, de acuerdo al número que se ingresa, muestra una de las 5 imágenes de cada una de las respectivas poses
-
-Entorno de la ventana
+#### *iii) Entorno de la ventana*
+  ```
 # Crear la ventana principal
 ventana = tk.Tk()
 ventana.title("LAB4")
@@ -346,6 +350,7 @@ contenedor_central.pack(side=tk.LEFT, padx=10, pady=10)
 # Crear contenedor para la columna derecha
 contenedor_derecha = tk.Frame(ventana)
 contenedor_derecha.pack(side=tk.LEFT, padx=10, pady=10)
+  ```
 
 Con lo anterior, primero se debe crear la ventana de trabajo, la cual se le da las dimensiones y la que se genera desde la librería, de ahi se divide en Frames, que son las subdivisiones en la cual se pondrá la información y los distintos elementos como imágenes o Labels, se divide en 3 frames, una a la izquierda, otra al centro y una a la derecha, para así dividir el HMI en 3 columnas.
 
