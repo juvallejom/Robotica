@@ -65,7 +65,13 @@ Para definir los ángulos de las articulaciones de las poses restantes se toman 
 
 
 
-FIGURA 2
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/tablaAngulos.PNG"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Valores de las articulaciones</em>
+ </p>
+ 
 
 
 Se usa nuevamente MATLAB para visualizar las poses definidas anteoriormente. Se inicializan los valores de las articulaciones *q* para cada una de las poses.
