@@ -476,4 +476,4 @@ A continuación se muestra la aplicación de las rutinas en el Pincher.
  </p>
 
 Se inlcuyen las evidencias del funcionamiento en 
-[Laboratorio 4/Videos](https://github.com/juvallejom/Rob-tica/tree/0427d87d040c1b32f62029b1ccdb074e060fbaa6/Laboratorio%204/Videos)
+[Laboratorio 4/Videos](https://drive.google.com/drive/folders/1mRkaB957gPphEGBv7sdQK7eYkS5h1ONK?usp=share_link)
