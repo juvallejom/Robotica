@@ -401,6 +401,14 @@ En el frame central se ubica la imagen que se tiene de acuerdo a la pose indicad
 
 Por último en el frame de la derecha se muestran los ángulos reales, donde se le posiciona un label y luego un espacio de texto, el cual reacciona con la función inicial de llamar a *lab4.py*, es decir, muestra  todo lo que *lab4.py* imprimió en terminal.
 
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/HMI.PNG"/>
+ </p>
+<p align="center">
+  <em>Figura 8 : Interfaz </em>
+ </p>
+
 ## 3.Ejecución y resultados.
 
 Para empezar a realizar lo realizado, primero debemos correr ROS con el comando.
@@ -430,35 +438,35 @@ A continuación se muestra la aplicación de las rutinas en el Pincher.
   <img width="60%" align="center" src="Imagenes/1.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 7 : Posición de Home </em>
+  <em>Figura 9 : Posición de Home </em>
  </p>
  
  <p align="center">
   <img width="60%" align="center" src="Imagenes/2.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 8 : Pose N°2 </em>
+  <em>Figura 10 : Pose N°2 </em>
  </p>
  
  <p align="center">
   <img width="60%" align="center" src="Imagenes/3.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 9 : Pose N°3 </em>
+  <em>Figura 11 : Pose N°3 </em>
  </p>
  
  <p align="center">
   <img width="60%" align="center" src="Imagenes/4.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 10 : Pose N°4 </em>
+  <em>Figura 12 : Pose N°4 </em>
  </p>
 
 <p align="center">
   <img width="60%" align="center" src="Imagenes/5.jpeg"/>
  </p>
 <p align="center">
-  <em>Figura 11 : Pose N°5 </em>
+  <em>Figura 13 : Pose N°5 </em>
  </p>
 
 Se inlcuyen las evidencias del funcionamiento en 
