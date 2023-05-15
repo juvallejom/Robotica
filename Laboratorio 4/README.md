@@ -59,45 +59,13 @@ Robot1 = SerialLink(Eslab, 'tool', T_tool)
 ```
 
 
-Finalmente se establecen  5 poses deseadas del robot, donde la primera corresponde a la posición de home y las restantes se establecen aleaoteareamente.
+Finalmente se establecen  5 poses deseadas del robot, donde la primera corresponde a la posición de home y las restantes se establecen aleatoriamente.
 
-Para definir los ángulos de las articualaciones de las poses restantes se toman respecto a los valores de cada una de las 4 articulaciones en la posición de home. Para la quinta articulación (asociada al movimiento del gripper) se definen valores arbitrarios. Los valores de las articulaciones para cada pose se registran en la *Figura 2*
+Para definir los ángulos de las articulaciones de las poses restantes se toman respecto a los valores de cada una de las 4 articulaciones en la posición de home. Para la quinta articulación (asociada al movimiento del gripper) se definen valores arbitrarios. Los valores de las articulaciones para cada pose se registran en la *Figura 2*
 
 
 
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/q1.png"/>
- </p>
-<p align="center">
-  <em>Figura 2 : Posición de Home </em>
- </p>
- 
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/q2.png"/>
- </p>
-<p align="center">
-  <em>Figura 3 : Pose N°2 </em>
- </p>
- 
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/q3.png"/>
- </p>
-<p align="center">
-  <em>Figura 4 : Pose N°3 </em>
- </p>
-
-<p align="center">
-  <img width="60%" align="center" src="Imagenes/q4.png"/>
- </p>
-<p align="center">
-  <em>Figura 5 : Pose N°4 </em>
- </p>
- <p align="center">
-  <img width="60%" align="center" src="Imagenes/q5.png"/>
- </p>
-<p align="center">
-  <em>Figura 6 : Pose N°5 </em>
- </p>
+FIGURA 2
 
 
 Se usa nuevamente MATLAB para visualizar las poses definidas anteoriormente. Se inicializan los valores de las articulaciones *q* para cada una de las poses.
@@ -127,7 +95,39 @@ Usando el comando *robot1.teach* se puede cambiar entre una y otra pose.
 Acontinuación se presentan las poses ordenadas desde la pose de home (1) hasta la pose N° 5. 
 
 
-FIGURA DE LAS POSES
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q1.png"/>
+ </p>
+<p align="center">
+  <em>Figura 3 : Posición de Home </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q2.png"/>
+ </p>
+<p align="center">
+  <em>Figura 4 : Pose N°2 </em>
+ </p>
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q3.png"/>
+ </p>
+<p align="center">
+  <em>Figura 5 : Pose N°3 </em>
+ </p>
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/q4.png"/>
+ </p>
+<p align="center">
+  <em>Figura 6 : Pose N°4 </em>
+ </p>
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/q5.png"/>
+ </p>
+<p align="center">
+  <em>Figura 7 : Pose N°5 </em>
+ </p>
 
 
 
@@ -137,8 +137,6 @@ FIGURA DE LAS POSES
 ### 2.2 Instalaciones Previas en Ubuntu
 
 Se realiza la instalación de *Dynamizel Wizard* y se descargan los paquetes y librerias necesarios para el manejo de los servomotores.
-
-LINKS
 
 Primero se conecta el pincher y se verifica que el sistema identifique los 5 servomotores usando el siguiente comando:
 
@@ -189,11 +187,11 @@ joint_5:
 ```
 
 Después de esto, se salvan los cambios. En  la carpeta **“scripts”** hay 3 archivos los cuales se  eliminan y se guardan los siguientes archivos nuevos.
-- Archivo python lab4.py : Archivo de codigo donde estara toda la información de movimiento, análisis, lectura de datos y transmisión de datos entre las articulaciones.
-- Archivo HMI  : Contiene la interfaz gráfica para el usuario,
-- Archivos de imagen necesarios para la implementación de la *Interfaz Humano Maquina*.
+- Archivo python lab4.py : Archivo de codigo donde estara toda la información de movimiento, análisis, lectura y transmisión de datos entre las articulaciones.
+- Archivo HMI  : Contiene la interfaz gráfica para el usuario.
+- Archivos de imagen necesarios para la implementación de la *Interfaz Humano Máquina*.
 
-Con esos cambios en el dynamixel one motor se puede da incio a la ejecuación del laboratorio.
+Con esos cambios en el dynamixel one motor se puede dar incio a la ejecuación del laboratorio.
 Se realiza el  launcher del dynamixel one motor.
 
 ```
@@ -208,7 +206,7 @@ Luego, cuando se ejecute, debe estar desconectado el dynamixel. Y por último se
 
 ### 2.3 Implementación en Python 
 
-Se importan los recursos necesarios y se establecen los valores de los torques límites para los servomotores. Es importante no asignar un valor tan alto para evitar sobrecargar a los servomotores, sin embargo este valor tampoco debe ser tan bajo como par no soportar el peso y movimientos que se desee. (posteriormente se verá su implementación con la función jointcommand -- PONER O CAMBIAR).
+Se importan los recursos necesarios y se establecen los valores de los torques límites para los servomotores. Es importante no asignar un valor tan alto para evitar sobrecargar a los servomotores, sin embargo este valor tampoco debe ser tan bajo como par no soportar el peso y movimientos que se desee.
 
 Además se establecen los valores de los ángulos en grados como se mostró en la *Figura 2* y se convierten a una escala de valores análogos (0 a 1023) con los que Dynamixel trabajará.
 
@@ -268,7 +266,7 @@ def Moving(j,Goal,Actual):
         time.sleep(0.1)
   ```
 
-Por medio de un número de pasos, se pasa desde un pose anterior a una nueva pose por medio de la primera función y el uso de Goal_Position, donde de acuerdo a un ID mencionado cada articulación posee 5 pasos para moverse a la posición deseada. ( CORREGIR REDACCION ACA)
+Por medio de un número de pasos, se cambia de un pose anterior a una nueva pose por medio de la primera función y el uso de Goal_Position, donde de acuerdo a un ID mencionado cada articulación posee 5 pasos para moverse a la posición deseada.
 
 #### e) Función Main
 
