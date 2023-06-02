@@ -1,4 +1,4 @@
-# Laboratorio 4 : Cinemática Directa - Phantom X - ROS
+# Laboratorio 5 : Robótica de Desarrollo - Cinemática Inversa
 <p align="center">
  Cristhian David Sandoval Diaz
 </p>
@@ -11,9 +11,6 @@
 
 ## 1. Introducción
 
-El objetivo de esta práctica es implementar los Joint Controllers con ROS para manipular servomotores Dynamixel AX-12 del robot Phantom
-X Pincher y usar tópicos de estado, servicios y comando para todos los Joint Controllers del robot Phantom X Pincher.
-
-
+El objetivo de esta práctica es determinar el modelo cinemático inverso del robot Phantom X, generar trayectorias de trabajo para dibujar figuras con el robot y operarlo usando ROS a partir de scripts generados en Python.
 
 ## 2. Metodología 
