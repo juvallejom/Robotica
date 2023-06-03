@@ -17,4 +17,6 @@ El objetivo de esta práctica es determinar el modelo cinemático inverso del ro
 
 ### 2.1 Caracterización del robot.
 
+## 3. Ejecución y resultados
+
 
