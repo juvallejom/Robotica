@@ -1,4 +1,6 @@
-# Laboratorio 5 : Robótica de Desarrollo - Cinemática Inversa
+<div align="center">
+<h1> Laboratorio 5 : Robótica de Desarrollo - Cinemática Inversa Phantom X
+</div>
 <p align="center">
  Cristhian David Sandoval Diaz
 </p>
