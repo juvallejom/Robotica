@@ -1,4 +1,6 @@
+<p align="center">
 # Laboratorio 4 : Cinemática Directa - Phantom X - ROS
+</p>
 <p align="center">
  Cristhian David Sandoval Diaz
 </p>
