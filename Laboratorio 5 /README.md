@@ -22,3 +22,4 @@ El objetivo de esta práctica es determinar el modelo cinemático inverso del ro
 ## 3. Ejecución y resultados
 
 
+Se incluyen evidencias del funcionamiento en [Video Laboratorio 5](https://www.youtube.com/watch?v=DuEC59lp24w)
