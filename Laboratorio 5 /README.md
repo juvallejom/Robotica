@@ -39,7 +39,7 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  #### *Dibujo de las iniciales*
  
  <p align="center">
-  <img width="60%" align="center" src="Imagenes/letras.png"/>
+  <img width="40%" align="center" src="Imagenes/letras.png"/>
  </p>
  
  #### *Dibujo de figura en estilo libre*
