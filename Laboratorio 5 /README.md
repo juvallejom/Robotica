@@ -56,8 +56,11 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
   <em>Figura 4 :Concepto incial de los puntos y trayectorias para el trazo de la figura de estilo libre </em>
  </p>
  
+ 
  #### *Descargar la herramienta*
-
+ 
+ ### 2.3 Cinemática Inversa
+ 
 ## 3. Ejecución y resultados
 
 
