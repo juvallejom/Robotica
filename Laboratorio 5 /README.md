@@ -42,6 +42,10 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
   <img width="20%" align="center" src="Imagenes/letras.png"/>
  </p>
  
+ <p align="center">
+  <em>Figura 3 :Concepto incial de los puntos y trayectorias para el trazo de las letras </em>
+ </p>
+ 
  #### *Dibujo de figura en estilo libre*
  
  #### *Descargar la herramienta*
