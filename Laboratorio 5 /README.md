@@ -19,7 +19,9 @@ El objetivo de esta práctica es determinar el modelo cinemático inverso del ro
 
 ## 2. Metodología 
  
-## 2.1 Planteamiento del Problema
+### 2.1 Caracterización del robot.
+ 
+### 2.2 Planteamiento del Problema
 En este laboratorio se desea generar una rutina con el robot Phantom X la cual implemente las siguientes tareas : 
  
  - Cargar la herramienta.
@@ -28,7 +30,7 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  - Dibujar una figura de estilo libre.
  - Descargar la herramienta.
 
-### 2.2 Caracterización del robot.
+ #### *Cargar la herramienta*
 
 ## 3. Ejecución y resultados
 
