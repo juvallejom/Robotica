@@ -48,6 +48,14 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  
  #### *Dibujo de figura en estilo libre*
  
+  <p align="center">
+  <img width="20%" align="center" src="Imagenes/estilolibre.png"/>
+ </p>
+ 
+ <p align="center">
+  <em>Figura 4 :Concepto incial de los puntos y trayectorias para el trazo de la figura de estilo libre </em>
+ </p>
+ 
  #### *Descargar la herramienta*
 
 ## 3. Ejecución y resultados
