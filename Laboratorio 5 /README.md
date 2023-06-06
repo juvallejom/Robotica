@@ -31,6 +31,14 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  - Descargar la herramienta.
 
  #### *Cargar la herramienta*
+ 
+ #### *Dibujo del espacio de trabajo*
+ 
+ #### *Dibujo de las iniciales*
+ 
+ #### *Dibujo de figura en estilo libre*
+ 
+ #### *Descargar la herramienta*
 
 ## 3. Ejecución y resultados
 
