@@ -207,6 +207,11 @@ def CinDir(q_1,q_2,q_3,q_4,q_5):
     else:
         print("\nq4 abierto\n")
    ```
+#### Restricciones Articulares
+                          
+Se establece el límite articular para la articulación 1 en 70°,ya que no puede dibujar en todos los 365. De igual forma, se limita el espacio de trabajo a una zona seccion de arco con  un valor de radio máximo y mínimo relacionados al espacio diestro de trabajo.
+Adicionalmente se establece el valor para la articulación q5 donde se considera abierto el gripper o cerrado.
+                          
 ### c) Función Move
 
 Por ultimo, esta función se encarga de usar las funciones iniciales de publisher y movimiento, unido a las cinemáticas encontradas para resumir en una sola función el  movimiento de los servomotores.
@@ -218,6 +223,28 @@ Por ultimo, esta función se encarga de usar las funciones iniciales de publishe
     joint_publisher(q,t)
     time.sleep(2*t)
   ```
+### d) HMI
+                          
+Para implementar una interfaz Humano - Máquina se diseñó un menú de opciones donde el usuario puede escoger entre entre continuar con la rutina  objetivo que se tiene programada o salir  del aplicativo, dejando de esta manera al usuario en un bucle donde puede realizar el proceso cuantas veces desee hasta que el mismo indique salir del programa.
+                          
+### e) Función Main 
+                          
+Inicialmente, se definen unos valores de torque, y se ubican las articulaciones en su posición de  home por medio de las funciones creadas.
+
+Mediante la interfaz Humano- Máquina, se le preguntará al usuario si desea dar inicio y  continuar con las rutinas o salir de la aplicación. Si el usuario opta por la primera alternativa el robot Phantom X se dirigirá a la posición inicial del marcador , lo sujetará por medio de la quinta articulación (gripper) y retornará a la posición de home.
+
+Como parte de la rutina inicial, el robot dibuja dos arcos correspondientes al espacio de trabajo (primero el interior y luego el exterior).  Después, se realizan iniciales C,J y D definidas a partir de los arreglos creados  en la última sección de la implementación.
+Una vez finalizado el trazo de las letras, el robot retorna a la posición de home.
+
+Finalmente, para la figura de estilo libre, se implementan arreglos para definir los ojos y dos semicircunferencias para la boca usando 25 puntos intermedios a lo largo de la trayectoria.
+Para este último tramo, se generó un arreglo especial para cada uno de los semicírculos ya que se trataba de figuras circulares con distintos  centros.
+
+Finalmente el robot retorna a la posición de home y ejecuta la última rutina relacionada con el desmonte del marcador, descargándolo en su posición inicial. Posterior a esto el robot retorna a home y se da por finalizada la rutina
+
+Para cada uno de los procesos, se genera  un tiempo de demora asociado a cada subproceso, de manera que se le muestra al usuario la demora de cada uno de los pasos.
+
+Al terminar la rutina, este le pregunta al usuario de manera cíclica si continuar nuevamente con el dibujo del proceso o salir del programa.
+                          
 ## 4. Ejecución y resultados
 
 
