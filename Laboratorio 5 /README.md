@@ -42,6 +42,14 @@ Se definen las longitudes de los eslabones en milímetros *(mm)* con los siguien
 - L2: 105.2
 - L3: 105.2
 - L4: 67.5
+ 
+ <p align="center">
+  <img width="60%" align="center" src="Imagenes/tablaAngulos.png"/>
+ </p>
+<p align="center">
+  <em>Figura 2 : Vaalores Articulares</em>
+ </p>
+ 
 
 Se realiza la verificación de la matriz  mediante el toolbox de Peter Corke en MATLAB para la posición de home implementando la siguiente sección de código:
 
