@@ -152,6 +152,64 @@ def joint_publisher(q,t):
     time.sleep(3*t)
  ```
  
+A partir del comando Goal Position, se logra mover los motores por medio de una actualización de registro.
+
+ De la misma manera, la función join Publisher, es la encargada de publicar el valor de las articulaciones para cada uno de los 5 servomotores.
+ 
+ ```
+#Función para enviar datos
+pub = rospy.Publisher('/joint_trajectory', JointTrajectory, queue_size=0)
+rospy.init_node('joint_publisher', anonymous=False)
+state = JointTrajectory()
+state.header.stamp = rospy.Time.now()
+state.joint_names = ["joint_1","joint_2","joint_3","joint_4","joint_4"]
+ ```
+Al igual que en el laboratorio 4, esta función hace uso del publisher para poder enviar los datos a cada una de las articulaciones.
+ 
+#### Cinemática Inversa en Python
+ 
+Después de establecer los offset del Home, se define la cinemática inversa de cada una de las 5 articulaciones **q**, de acuerdo a lo obtenido en el método geométrico anteriormente descrito, donde a partir de L1, L2, L3, L4 y las 3 componentes cartesianas del punto P , se define los valores theta de cada una de las articulaciones *q*.
+ 
+Cabe resaltar que la última articulación corresponde gripper y este consiste únicamente es un estado booleano donde se encuentra sosteniendo o no el marcador.
+
+ 
+ ```
+# Funcion de cinemática inversa
+def CinInv(Px,Py,P_z,ang):
+    L1=0.1342
+    L2=0.1052
+    L3=0.1052
+    L4=0.0675
+    T1=q_1(Px,Py)
+    T2=q_2(Px,Py,P_z,ang,L1,L2,L3,L4)
+    T3=q_3(Px,Py,P_z,ang,L1,L2,L3,L4)
+    T4=q_4(ang,T2,T3)
+    return np.array([round(T1,3),round(T2,3),round(T3,3),round(T4,3)])
+
+
+# Funcion de cinemática directa
+def CinDir(q_1,q_2,q_3,q_4,q_5):
+    L1=0.1342
+    L2=0.1052
+    L3=0.1052
+    L4=0.0675
+    ang=np.arccos(np.cos(q_2 + q_3 + q_4)*np.cos(q_1))
+    Px=np.cos(q_1)*(L3*np.cos(q_2 + q_3) - L2*np.sin(q_2) + L4*np.cos(q_2 + q_3 + q_4))
+    Py=np.sin(q_1)*(L3*np.cos(q_2 + q_3) - L2*np.sin(q_2) + L4*np.cos(q_2 + q_3 + q_4))
+    P_z=L1 + L3*np.sin(q_2 + q_3) + L2*np.cos(q_2) + L4*np.sin(q_2 + q_3 + q_4)
+    if q_5<-40*np.pi/180:
+        Grip=1
+    else:
+        Grip=0
+    print('Pos X: '+"%.2f" % Px+'°\tPos Y:'+"%.2f" % Py+'°\tPos Z:'+"%.2f" % P_z+'°\tang:'+"%.2f" % ang)
+    if Grip==1:
+        print("\nq4 cerrado\n")
+    else:
+        print("\nq4 abierto\n")
+   ```
+
+
+ 
 ## 4. Ejecución y resultados
 
 
