@@ -118,7 +118,7 @@ En términos de pose, el robot Phantom X cuenta con 4 grados de libertad, de est
 
  Para el código, se hace uso de python y de las herramientas vistas  en el laboratorio 4, por lo que inicialmente se consideran las librerías, y luego inmediatamente se declaran todas las funciones a usar.
  
- Primero se crea las funciones relacionadas a la comunicación:
+### a) Funciones de Comunicación
  
  ```
  #Función para mover motores (de lab4).
@@ -152,9 +152,9 @@ def joint_publisher(q,t):
     time.sleep(3*t)
  ```
  
-A partir del comando Goal Position, se logra mover los motores por medio de una actualización de registro.
+A partir del comando Goal_Position, se logra mover los motores por medio de una actualización de registro.
 
- De la misma manera, la función join Publisher, es la encargada de publicar el valor de las articulaciones para cada uno de los 5 servomotores.
+ De la misma manera, la función joint_Publisher, es la encargada de publicar el valor de las articulaciones para cada uno de los 5 servomotores.
  
  ```
 #Función para enviar datos
@@ -166,7 +166,7 @@ state.joint_names = ["joint_1","joint_2","joint_3","joint_4","joint_4"]
  ```
 Al igual que en el laboratorio 4, esta función hace uso del publisher para poder enviar los datos a cada una de las articulaciones.
  
-#### Cinemática Inversa en Python
+### b) Cinemática Inversa en Python
  
 Después de establecer los offset del Home, se define la cinemática inversa de cada una de las 5 articulaciones **q**, de acuerdo a lo obtenido en el método geométrico anteriormente descrito, donde a partir de L1, L2, L3, L4 y las 3 componentes cartesianas del punto P , se define los valores theta de cada una de las articulaciones *q*.
  
@@ -207,9 +207,17 @@ def CinDir(q_1,q_2,q_3,q_4,q_5):
     else:
         print("\nq4 abierto\n")
    ```
+### c) Función Move
 
+Por ultimo, esta función se encarga de usar las funciones iniciales de publisher y movimiento, unido a las cinemáticas encontradas para resumir en una sola función el  movimiento de los servomotores.
 
- 
+  ```
+ def Mover(Pos,t,tool):
+    q=np.concatenate(((CinInv(Pos[0],Pos[1],Pos[2],Pos[3])+OffsetHomR[0:4]),np.array([tool])), axis=0)
+    time.sleep(2*t)
+    joint_publisher(q,t)
+    time.sleep(2*t)
+  ```
 ## 4. Ejecución y resultados
 
 
