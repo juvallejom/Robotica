@@ -116,6 +116,41 @@ En términos de pose, el robot Phantom X cuenta con 4 grados de libertad, de est
  
 ## 3. Implementación en Python.
 
+ Para el código, se hace uso de python y de las herramientas vistas  en el laboratorio 4, por lo que inicialmente se consideran las librerías, y luego inmediatamente se declaran todas las funciones a usar.
+ 
+ Primero se crea las funciones relacionadas a la comunicación:
+ 
+ ```
+ #Función para mover motores (de lab4).
+def jointCommand(command, id_num, addr_name, value, time):
+    rospy.wait_for_service('dynamixel_workbench/dynamixel_command')
+    try:        
+        dynamixel_command = rospy.ServiceProxy('/dynamixel_workbench/dynamixel_command', DynamixelCommand)
+        result = dynamixel_command(command,id_num,addr_name,value)
+        rospy.sleep(time)
+        return result.comm_result
+    except rospy.ServiceException as exc:
+        print(str(exc))
+def ActualizarRegistros(Po):
+    for i in range(len(Po)):
+        jointCommand('', (i+1), 'Goal_Position', int(Po[i]), 0)
+        s=i
+    print(Po)
+
+
+def joint_publisher(q,t):
+    state = JointTrajectory()
+    state.header.stamp = rospy.Time.now()
+    state.joint_names = ["joint_1","joint_2","joint_3","joint_4","joint_5"]
+    point = JointTrajectoryPoint()
+    point.positions = q
+    point.time_from_start = rospy.Duration(t)
+    state.points.append(point)
+    pub.publish(state)
+    print('Cambio de punto q:')  
+    CinDir(q[0],q[1],q[2],q[3],q[4])
+    time.sleep(3*t)
+ ```
  
 ## 4. Ejecución y resultados
 
