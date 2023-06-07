@@ -73,9 +73,15 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  
  #### *Cargar la herramienta*
  
+ El Robot debe estar en la capacidad de tomar  el marcador en su posición inicial para poder realizar las figuras sobre la superficie como se propone en la práctica.
+ 
  #### *Dibujo del espacio de trabajo*
  
+ Se debe acotar el espacio del trabajo mediante la intersección de dos secciones de arco con radios disntintos. El radio máximo y el radio mínimo estan dados por los limites articulares del Robot 
+ 
  #### *Dibujo de las iniciales*
+
+ Se deben dibujar las inciales de los integrantes del grupo. En la *Figura 3* se puede ver la definición de los puntos para desarrollar esta subrutina.
  
  <p align="center">
   <img width="20%" align="center" src="Imagenes/letras.png"/>
@@ -87,6 +93,8 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  
  #### *Dibujo de figura en estilo libre*
  
+ Se debe realizar una figura libre que integre lineas y curvas.
+ 
   <p align="center">
   <img width="20%" align="center" src="Imagenes/estilolibre.png"/>
  </p>
@@ -97,6 +105,8 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  
  
  #### *Descargar la herramienta*
+ 
+ Como rutina final, el robot debe regresar el marcador a su posición inicial.
  
  ### 2.3 Cinemática Inversa
  
