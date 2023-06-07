@@ -114,10 +114,10 @@ En términos de pose, el robot Phantom X cuenta con 4 grados de libertad, de est
  
  IMAGENES DE LAS GEMOETRIAS INVERSAS
  
- 
+## 3. Implementación en Python.
 
  
-## 3. Ejecución y resultados
+## 4. Ejecución y resultados
 
 
 https://docs.google.com/document/d/1IW1wlN8kBAo6353ksH-8YsHtTfJ6WyQPiX8TjBVO4R8/edit
