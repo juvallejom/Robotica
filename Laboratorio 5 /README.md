@@ -61,6 +61,10 @@ En este laboratorio se desea generar una rutina con el robot Phantom X la cual i
  
  ### 2.3 Cinemática Inversa
  
+Para realizar el proceso de cinemática inversa, la idea básica es obtener valores del efector final en ciertas posiciones con el fin de definir trayectorias que cumplan con los requisitos propuestos.
+Cada punto P asociado a una posición del efector final debe ser descompuesto en coordenadas cartesianas *(x,y)* para organizar los puntos respecto a un sistema de coordenadas que se ubica en la base del robot ( preferiblemente en el centro de la primera articulación.
+
+ 
 ## 3. Ejecución y resultados
 
 
