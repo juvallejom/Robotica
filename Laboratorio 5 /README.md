@@ -44,10 +44,10 @@ Se definen las longitudes de los eslabones en milímetros *(mm)* con los siguien
 - L4: 67.5
  
  <p align="center">
-  <img width="60%" align="center" src="Imagenes/tablaAngulos.png"/>
+  <img width="60%" align="center" src="Imagenes/tablaAngulos.PNG"/>
  </p>
 <p align="center">
-  <em>Figura 2 : Vaalores Articulares</em>
+  <em>Figura 2 : Valores Articulares</em>
  </p>
  
 
