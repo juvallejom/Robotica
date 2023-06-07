@@ -71,14 +71,6 @@ Robot1 = SerialLink(Eslab, 'tool', T_tool)
 ### 2.2 Planteamiento del Problema
 En este laboratorio se desea generar una rutina con el robot Phantom X la cual implemente las siguientes tareas : 
  
- - Cargar la herramienta.
- - Dibujar el espacio de trabajo.
- - Dibujar las inciales de los nombres de los integrantes del grupo *(CJD)*
- - Dibujar una figura de estilo libre.
- - Descargar la herramienta.
-
- A continuación, presentaremos un repaso rápido de en la generación de cada una de las subrutinas.
- 
  #### *Cargar la herramienta*
  
  #### *Dibujo del espacio de trabajo*
