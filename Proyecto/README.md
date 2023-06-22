@@ -16,5 +16,21 @@
 </p>**
 
 <h2>
- Descripción del Problema
+ 1.Descripción del Problema
+</h2>
+
+<h2>
+ 2.Diseño de la Herramienta
+</h2>
+
+<h2>
+ 3.Sección de Alistamiento
+</h2>
+
+<h2>
+ 4.Desarrollo e Implementación en RobotStudio
+</h2>
+
+<h2>
+ 5.Implementación en el brazo ABB IRB 140
 </h2>
