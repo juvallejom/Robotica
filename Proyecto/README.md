@@ -17,7 +17,9 @@
 
 <h2>
  1.Descripción del Problema
-</h2>
+</h2> 
+
+El objetivo del proyecto es diseñar e implementar rutinas en el robot ABB IRB 140 con el fin de generar un proceso de *Pick & Place*
 
 <h2>
  2.Diseño de la Herramienta
