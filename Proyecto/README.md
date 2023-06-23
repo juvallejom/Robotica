@@ -1,4 +1,4 @@
-**<div align="center">
+<div align="center">
 <h1> Robótica
  
  Proyecto Final
@@ -42,6 +42,38 @@ Para realiazr la implementación de las rutinas en RobotStudio es necesario tene
  3.1. Estanteria. 
 </h3>
 
+El estanteria implementada tiene las siguientes medidas.
+
+IMAGEN MEDIDAS ESTANTERIA 
+
+La estanteria presenta una profundidad de 10 cm. Con estas mediadas se construye un modelado con el software Autodesk Inventor. 
+
+INSERTAR MODELO ESTANTERIA
+
+REFERENCIAR EL MODELADO ACA
+
+INSERTAT IMAGEN PLANO ESTANTERIA 
+
+<h3>
+ 3.3. Piezas. 
+</h3>
+
+La piezas corresponden a las geometrías que toma la ventosa para dejar en el balde. Estas figuras son arbitrarias y se 	realizan 6 modelos distintos.
+La única restricción es su tamaño el cual debe ser meayor a la campana de succión de la ventosa para que se pueda sujetar completamente pero debe ingresar al balde sin esfuerzo por lo que hay un tamaño máximo para las piezas.
+
+
+INSERTAR MODELAADO DE PIEZAS
+
+<h3>
+ 3.3. Portaherramientas, balde y gancho. 
+</h3>
+
+El modelado de la herramienta se toma de su proceso de construccion descrito en la *Sección 2*.
+Por otro lado, el modelado del gancho y del balde son incluidos dentro del planteamiento del proyecto.
+
+INCLUIR MODELADO BLADE
+
+INCLUIR MODELADO GANCHO
 
 
 <h2>
