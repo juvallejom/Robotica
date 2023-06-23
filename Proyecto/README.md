@@ -30,14 +30,12 @@ De manera concisa, el proyecto consiste en realizar una rutina dividida en 3 par
 
 <h2>
  2.Diseño de la Herramienta
+</h2>
 
 El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se planteó 3 piezas para imprimir debido a que la complejidad de la geometría nos obligaba a dividirla en 3 para  imprimirla de manera correcta. Se idearon 3 partes :
 * Sección de anclaje al ABB
 * Sujeción ventosa y ventosa
 * Sección de cambio de orientación de la ventosa.
-
-
-</h2>
 
 <h2>
  3.Diseño y modelado de elementos.
