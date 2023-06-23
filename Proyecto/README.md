@@ -85,9 +85,9 @@ INCLUIR MODELADO GANCHO
  4.Sección de Alistamiento
 </h2>
 
-El punto de aislamiento es un punto intermedio donde se coloca el balde proveniente de la banda transportadora. Además, es el lugar donde la ventosa deposita las piezas tomadas de la estantería.
+El punto de alistamiento es un punto intermedio donde se coloca el balde proveniente de la banda transportadora. Además, es el lugar donde la ventosa deposita las piezas tomadas de la estantería.
 
-La ubicación seleccionada para el punto de aislamiento se encuentra en el punto medio entre la banda transportadora, ubicada a la derecha del robot, y la estantería, situada a la izquierda del robot. Desde la perspectiva del robot, el punto de aislamiento está en la parte frontal.
+La ubicación seleccionada para el punto de alistamiento se encuentra en el punto medio entre la banda transportadora, ubicada a la derecha del robot, y la estantería, situada a la izquierda del robot. Desde la perspectiva del robot, el punto de aislamiento está en la parte frontal.
 
 Es importante destacar que este punto se encuentra dentro de los límites articulares del robot, lo que significa que se espera que el robot pueda ejecutar los movimientos y rutinas solicitadas sin dificultades significativas.
 
