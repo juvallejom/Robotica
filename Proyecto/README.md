@@ -179,11 +179,11 @@ La creación de las caminos o path, se hacen en función de cada WorkObject .A c
 
 * **Estantería:** Consta de 6 paths, uno para cada pieza, en este caso se cambia de TCP a la ventosa, adicionalmente posee 2 paths  
     adicionales para dejar la pieza en el balde
-   *Path para Pieza n: Va al punto estacionario de la estantería, llega a un punto de aproximación de la pieza n, se posiciona encima de 
+   * Path para Pieza n: Va al punto estacionario de la estantería, llega a un punto de aproximación de la pieza n, se posiciona encima de 
     la pieza y baja un poco para recogerla, luego se devuelve por estos target de aproximación para finalmente volver al punto 
     estacionario.
-   *Path 1 para dejar la pieza: Tomada la pieza va al punto estacionario del workobject del punto de aislamiento, y se acerca al balde.
-   *Path 2 para dejar la pieza: Tras desactivar el vacío con la electroválvula y que la pieza haya caído en el balde, el robot se aleja 
+   * Path 1 para dejar la pieza: Tomada la pieza va al punto estacionario del workobject del punto de aislamiento, y se acerca al balde.
+   * Path 2 para dejar la pieza: Tras desactivar el vacío con la electroválvula y que la pieza haya caído en el balde, el robot se aleja 
     del balde volviendo al punto estacionario de workobject de aislamiento.
 
 
