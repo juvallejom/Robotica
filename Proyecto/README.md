@@ -103,9 +103,22 @@ INSERTAR MODELAADO DE PIEZAS
 El modelado de la herramienta se toma de su proceso de construccion descrito en la *Sección 2*.
 Por otro lado, el modelado del gancho y del balde son incluidos dentro del planteamiento del proyecto.
 
-INCLUIR MODELADO BLADE
+*Modelado del Balde*
+  <p align="center">
+  <img width="30%" align="center" src="Imagenes/Balde.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 2: Modelado del Balde</em>
+  </p>
 
-INCLUIR MODELADO GANCHO
+*Modelo del Gancho*
+  <p align="center">
+  <img width="30%" align="center" src="Imagenes/Gancho.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 2: Modelado del Gancho</em>
+  </p>
+
 
 <h3>
  3.4. Ventosa. 
