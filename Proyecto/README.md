@@ -212,7 +212,7 @@ La creación de las caminos o path, se hacen en función de cada WorkObject .A c
 
 
   <p align="center">
-  <img width="30%" align="center" src="Imagenes/RobotStudio_Entorno.png"/>
+  <img width="60%" align="center" src="Imagenes/RobotStudio_Entorno.png"/>
   </p>
   <p align="center">
   <em>Figura 2: Implementación en RobotStudio</em>
