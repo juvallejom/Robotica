@@ -133,6 +133,13 @@ Esta herramienta fue incluida detro del plantemaineto del proyecto. A continuaci
   <em>Figura 2: Modelado de la Ventosa</em>
  </p>
 
+  <p align="center">
+  <img width="30%" align="center" src="Imagenes/Ventosa_real.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 2: Ventosa implementada en las rutinas</em>
+  </p>
+
 <h2>
  4.Sección de Alistamiento
 </h2>
@@ -200,7 +207,12 @@ La creación de las caminos o path, se hacen en función de cada WorkObject .A c
     del balde volviendo al punto estacionario de workobject de aislamiento.
 
 
-
+  <p align="center">
+  <img width="30%" align="center" src="Imagenes/RobotStudio_Entorno.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 2: Implementación en RobotStudio</em>
+  </p>
 
 
 
