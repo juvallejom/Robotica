@@ -205,4 +205,19 @@ Esta electroválvula funciona con 2 debido a que con una señal empuja para acti
 
 Después de sincronizar se modifica el main en el orden deseado, empieza con un path de ir al home del robot de ahi sigue con el path de tomar el balde, y luego con los 2 paths de dejarlo con los 3 segundos intermedios, posteriormente se deja unos 3 segundos donde el operador debe seleccionar qué rutina tomar, y en este orden el programa decide cuál de las 4 opciones operar, cuando entra a una rutina, realiza el mismo proceso para cada una de las 4 fichas que toma.
 
-Primero prende la electroválvula(salida 2 según código) para activar el vacío, de ahí hace el path donde va hasta la estantería, toma la ficha y vuelve al punto estacionario del workobject de la estantería, luego hace el path de soltar la ficha donde va hasta el balde, ubicado en el punto de aislamiento y cuando esta encima de él de acuerdo al path, se suelta la ficha, desactivando el vacío por medio de la otra electroválvula(salida 1 según código), para finalmente volver al punto
+Primero prende la electroválvula(salida 2 según código) para activar el vacío, de ahí hace el path donde va hasta la estantería, toma la ficha y vuelve al punto estacionario del workobject de la estantería, luego hace el path de soltar la ficha donde va hasta el balde, ubicado en el punto de aislamiento y cuando esta encima de él de acuerdo al path, se suelta la ficha, desactivando el vacío por medio de la otra electroválvula(salida 1 según código), para finalmente volver al punto.
+
+<h2>
+ 7.Resultados
+</h2>
+
+Se realiza la validación del proceso con 2 rutinas de acuerdo a las indicaciones dadas sujetas a la demanda del robot, esta validación consta de dos videos los cuales se pueden evidenciar en el siguiente enlace::
+
+Video: https://www.youtube.com/watch?v=FPRiDS6P5Rw
+
+Los videos muestran inicialmente la simulación realizada en el RobotStudio para cada caso, así como la validación donde la rutina consiste en ir al home del robot, ir a tomar el balde, dejarlo en el punto de aislamiento para posteriormente con la ventosa y la activación y desactivación del vacío, tome las 4 piezas y las deje en el balde, de acuerdo a la rutina seleccionada de entre las 4 existentes, esta selección se realiza por medio de un botón. Una vez terminado el proceso, el robot toma nuevamente el balde y lo deja en la banda transportadora para finalmente volver a su posición de home.
+
+
+<h2>
+ 8.Conlcusiones
+</h2>
