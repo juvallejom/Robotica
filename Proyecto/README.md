@@ -93,8 +93,12 @@ INSERTAT IMAGEN PLANO ESTANTERIA
 La piezas corresponden a las geometrías que toma la ventosa para dejar en el balde. Estas figuras son arbitrarias y se 	realizan 6 modelos distintos.
 La única restricción es su tamaño el cual debe ser meayor a la campana de succión de la ventosa para que se pueda sujetar completamente pero debe ingresar al balde sin esfuerzo por lo que hay un tamaño máximo para las piezas.
 
-
-INSERTAR MODELAADO DE PIEZAS
+  <p align="center">
+  <img width="30%" align="center" src="Imagenes/Estanteria_ConPiezas.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 2: Disposición de las piezas de la estanteria</em>
+  </p>
 
 <h3>
  3.3. Portaherramientas, balde y gancho. 
