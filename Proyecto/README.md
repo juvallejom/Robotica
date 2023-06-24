@@ -34,6 +34,12 @@ De manera concisa, el proyecto consiste en realizar una rutina dividida en 3 par
 
 El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se planteó 3 piezas para imprimir debido a que la complejidad de la geometría se  dividio en 3 para  imprimirla de manera correcta. Se idearon 3 partes :
 * Sección de anclaje al ABB
+  <p align="center">
+  <img width="60%" align="center" src="Imagenes/Portaherramienta_Base.png"/>
+ </p>
+<p align="center">
+  <em>Figura 1 :Medidas de la Estanteria</em>
+ </p>
 * Sujeción ventosa y ventosa
 * Sección de cambio de orientación de la ventosa.
 
@@ -49,13 +55,22 @@ Para realiazr la implementación de las rutinas en RobotStudio es necesario tene
 
 El estanteria implementada tiene las siguientes medidas.
 
-IMAGEN MEDIDAS ESTANTERIA 
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/Estanteria_Medidas.png"/>
+ </p>
+<p align="center">
+  <em>Figura 1: Medidas de la Estanteria</em>
+ </p>
 
 La estanteria presenta una profundidad de 10 cm. Con estas mediadas se construye un modelado con el software Autodesk Inventor. 
 
-INSERTAR MODELO ESTANTERIA
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/Estanteria_Modelado.png"/>
+ </p>
+<p align="center">
+  <em>Figura 2: Modelado de la Estanteria</em>
+ </p>
 
-REFERENCIAR EL MODELADO ACA
 
 INSERTAT IMAGEN PLANO ESTANTERIA 
 
@@ -92,6 +107,13 @@ La ubicación seleccionada para el punto de alistamiento se encuentra en el punt
 Es importante destacar que este punto se encuentra dentro de los límites articulares del robot, lo que significa que se espera que el robot pueda ejecutar los movimientos y rutinas solicitadas sin dificultades significativas.
 
 Con el objetivo de asegurar un movimiento sencillo del robot y mantenerlo dentro de sus límites articulares, se ha diseñado cuidadosamente la ubicación y los procesos en el punto de alistamiento. Como se puede observar en la imagen, el robot no excede sus límites articulares, lo que facilita la ejecución de las acciones solicitadas.
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/LimitesArticularesRobot.png"/>
+ </p>
+<p align="center">
+  <em>Figura 2:Limites Articualres del Robot</em>
+ </p>
 
 
 <h2>
