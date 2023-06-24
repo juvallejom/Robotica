@@ -120,8 +120,7 @@ Cada workobject tiene un estado estacionario, correspondiente a un target donde 
 
 La creación de las caminos o path, se hacen en función de cada WorkObject .A continuación se hace una breve descripción del método o ruta de decisión para generar los paths de cada WorkObject. 
 * **Balde en la banda transportadora :**  Se hace uso del TCP del gancho. De manera inicial, se hacen 2 caminos, uno para tomar el balde y otro para dejarlo; cada uno consta de 5 targets,en el caso de tomar el balde se generan tarjeta movimiento al punto de estado estacionario - aproximación por un costado al balde -  sujeción del balde - levantamiento el balde - retornar el balde al estado estacionario.
-  
-De manera similar funciona el segundo path para dejar el balde, siguiendo el siguiente orden : levantamiento del balde -  movimiento de bajada del balde - descargue del balde - salida de la herramienta por un costado - retornar al estado estacionario.
+  De manera similar funciona el segundo path para dejar el balde, siguiendo el siguiente orden : levantamiento del balde -  movimiento de bajada del balde - descargue del balde - salida de la herramienta por un costado - retornar al estado estacionario.
 
 * 
 
