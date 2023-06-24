@@ -36,10 +36,10 @@ El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se 
 * Sección de anclaje al ABB
   <p align="center">
   <img width="60%" align="center" src="Imagenes/Portaherramienta_Base.png"/>
- </p>
-<p align="center">
-  <em>Figura 1 :Medidas de la Estanteria</em>
- </p>
+  </p>
+  <p align="center">
+  <em>Figura 1 :Anclaje de la herramienta al Robot</em>
+  </p>
 * Sujeción ventosa y ventosa
 * Sección de cambio de orientación de la ventosa.
 
