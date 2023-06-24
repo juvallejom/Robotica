@@ -169,7 +169,29 @@ La creación de las caminos o path, se hacen en función de cada WorkObject .A c
   De manera similar funciona el segundo path para dejar el balde, siguiendo el siguiente orden : levantamiento del balde -  movimiento de bajada del balde - descargue del balde - salida de la herramienta por un costado - retornar al estado estacionario.
 
 * **Punto de aislamiento :** Consta de dos paths para posicionar el balde, y 1 para recoger el balde:
-* * dsds
+  * Primer Path Posicionar Balde : Aproximación al punto con baja velocidad  evitando oscilaciones producidas por la  inercia en el     balde. Este movimiento es de vital importancia para el correcto posicionamiento del balde y afecta de manera directa el correcto “place” de las piezas en el balde. Una vez cerca al punto de aislamiento este se queda en una posición elevada.
+ 
+  * Segundo Path Posicionar Balde: Tras 3 segundos de espera, este path baja hasta el punto de aislamiento y se mueve por el lado del balde para volver a su respectivo punto estacionario
+ 
+  * Path Recoger el Balde: Para tomar el balde posterior a dejar las piezas, cambia levemente, acercándose primero, pero esta vez no va hasta el balde sino que va más al fondo para asegurar que toma el balde, dado caso que la manija del mismo esta mal ubicada.
+
+   Para estos paths se hace uso del gancho como herramienta.
+
+* **Estantería:** Consta de 6 paths, uno para cada pieza, en este caso se cambia de TCP a la ventosa, adicionalmente posee 2 paths adicionales para dejar la pieza en el balde
+   *Path para Pieza n: Va al punto estacionario de la estantería, llega a un punto de aproximación de la pieza n, se posiciona encima de la pieza y baja un poco para recogerla, luego se devuelve por estos target de aproximación para finalmente volver al punto estacionario.
+   *Path 1 para dejar la pieza: Tomada la pieza va al punto estacionario del workobject del punto de aislamiento, y se acerca al balde.
+   *Path 2 para dejar la pieza: Tras desactivar el vacío con la electroválvula y que la pieza haya caído en el balde, el robot se aleja del balde volviendo al punto estacionario de workobject de aislamiento.
+
+Con lo anterior establecido, sincronizamos con el entorno RAPID y procedemos a realizar el código que ejecutará el robot.
+
+El ejercicio se resuelve en el orden de tener 4 entradas y 2 salidas, las 4 entradas corresponden a los 4 botones para cada rutina, las 2 salidas para el on y off de la electroválvula que prende y apaga el vacío de la ventosa, por lo que se crean en el entorno de simulación.
+
+Esta electroválvula funciona con 2 debido a que con una señal empuja para activar y con otra diferente se desactiva, de manera que para cada señal, se debe energizar para que prenda la electroválvula y mantener ahí un poco para asegurar su funcionamiento, con 1 segundo es suficiente y luego de desenergiza para que de la libertad a la otra electroválvula de moverla y poder quitar y poner el vacío deseado.
+
+Después de sincronizar se modifica el main en el orden deseado, empieza con un path de ir al home del robot de ahi sigue con el path de tomar el balde, y luego con los 2 paths de dejarlo con los 3 segundos intermedios, posteriormente se deja unos 3 segundos donde el operador debe seleccionar qué rutina tomar, y en este orden el programa decide cuál de las 4 opciones operar, cuando entra a una rutina, realiza el mismo proceso para cada una de las 4 fichas que toma. Primero prende la electroválvula(salida 2 según código) para activar el vacío, de ahí hace el path donde va hasta la estantería, toma la ficha y vuelve al punto estacionario del workobject de la estantería, luego hace el path de soltar la ficha donde va hasta el balde, ubicado en el punto de aislamiento y cuando esta encima de él de acuerdo al path, se suelta la ficha, desactivando el vacío por medio de la otra electroválvula(salida 1 según código), para finalmente volver al punto
+
+
+
 
 
 
