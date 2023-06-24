@@ -52,7 +52,7 @@ El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se 
    <img width="60%" align="center" src="Imagenes/Portaherramienta_Cuerpo.png"/>
    </p>
    <p align="center">
-   <em>Figura 1 :Anclaje de la herramienta al Robot</em>
+   <em>Figura 3 :Cuerpo de la herramienta</em>
    </p
 
 <h2>
@@ -87,7 +87,7 @@ La estanteria presenta una profundidad de 10 cm. Con estas mediadas se construye
 INSERTAT IMAGEN PLANO ESTANTERIA 
 
 <h3>
- 3.3. Piezas. 
+ 3.2. Piezas. 
 </h3>
 
 La piezas corresponden a las geometrías que toma la ventosa para dejar en el balde. Estas figuras son arbitrarias y se 	realizan 6 modelos distintos.
@@ -107,6 +107,18 @@ INCLUIR MODELADO BLADE
 
 INCLUIR MODELADO GANCHO
 
+<h3>
+ 3.4. Ventosa. 
+</h3>
+
+Esta herramienta fue incluida detro del plantemaineto del proyecto. A continuación se evidencia su modelado.
+
+<p align="center">
+  <img width="60%" align="center" src="Imagenes/Ventosa_Modelado.png"/>
+ </p>
+<p align="center">
+  <em>Figura 2: Modelado de la Ventosa</em>
+ </p>
 
 <h2>
  4.Sección de Alistamiento
