@@ -68,7 +68,7 @@ Para realiazr la implementación de las rutinas en RobotStudio es necesario tene
 El estanteria implementada tiene las siguientes medidas.
 
 <p align="center">
-  <img width="60%" align="center" src="Imagenes/Estanteria_Medidas.png"/>
+  <img width="30%" align="center" src="Imagenes/Estanteria_Medidas.png"/>
  </p>
 <p align="center">
   <em>Figura 1: Medidas de la Estanteria</em>
