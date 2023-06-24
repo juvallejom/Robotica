@@ -108,6 +108,15 @@ La única restricción es su tamaño el cual debe ser meayor a la campana de suc
   <em>Figura 7: Disposición de las piezas de la estanteria</em>
   </p>
 
+ *Ejemplo de una de las piezas modeladas*
+
+  <p align="center">
+  <img width="30%" align="center" src="Imagenes/Pieza.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 7: Pieza Hexagonales </em>
+  </p>
+
 <h3>
  3.3. Portaherramientas, balde y gancho. 
 </h3>
