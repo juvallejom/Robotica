@@ -177,18 +177,16 @@ La creación de las caminos o path, se hacen en función de cada WorkObject .A c
 
    Para estos paths se hace uso del gancho como herramienta.
 
-* **Estantería:** Consta de 6 paths, uno para cada pieza, en este caso se cambia de TCP a la ventosa, adicionalmente posee 2 paths adicionales para dejar la pieza en el balde
-   *Path para Pieza n: Va al punto estacionario de la estantería, llega a un punto de aproximación de la pieza n, se posiciona encima de la pieza y baja un poco para recogerla, luego se devuelve por estos target de aproximación para finalmente volver al punto estacionario.
+* **Estantería:** Consta de 6 paths, uno para cada pieza, en este caso se cambia de TCP a la ventosa, adicionalmente posee 2 paths  
+    adicionales para dejar la pieza en el balde
+   *Path para Pieza n: Va al punto estacionario de la estantería, llega a un punto de aproximación de la pieza n, se posiciona encima de 
+    la pieza y baja un poco para recogerla, luego se devuelve por estos target de aproximación para finalmente volver al punto 
+    estacionario.
    *Path 1 para dejar la pieza: Tomada la pieza va al punto estacionario del workobject del punto de aislamiento, y se acerca al balde.
-   *Path 2 para dejar la pieza: Tras desactivar el vacío con la electroválvula y que la pieza haya caído en el balde, el robot se aleja del balde volviendo al punto estacionario de workobject de aislamiento.
+   *Path 2 para dejar la pieza: Tras desactivar el vacío con la electroválvula y que la pieza haya caído en el balde, el robot se aleja 
+    del balde volviendo al punto estacionario de workobject de aislamiento.
 
-Con lo anterior establecido, sincronizamos con el entorno RAPID y procedemos a realizar el código que ejecutará el robot.
 
-El ejercicio se resuelve en el orden de tener 4 entradas y 2 salidas, las 4 entradas corresponden a los 4 botones para cada rutina, las 2 salidas para el on y off de la electroválvula que prende y apaga el vacío de la ventosa, por lo que se crean en el entorno de simulación.
-
-Esta electroválvula funciona con 2 debido a que con una señal empuja para activar y con otra diferente se desactiva, de manera que para cada señal, se debe energizar para que prenda la electroválvula y mantener ahí un poco para asegurar su funcionamiento, con 1 segundo es suficiente y luego de desenergiza para que de la libertad a la otra electroválvula de moverla y poder quitar y poner el vacío deseado.
-
-Después de sincronizar se modifica el main en el orden deseado, empieza con un path de ir al home del robot de ahi sigue con el path de tomar el balde, y luego con los 2 paths de dejarlo con los 3 segundos intermedios, posteriormente se deja unos 3 segundos donde el operador debe seleccionar qué rutina tomar, y en este orden el programa decide cuál de las 4 opciones operar, cuando entra a una rutina, realiza el mismo proceso para cada una de las 4 fichas que toma. Primero prende la electroválvula(salida 2 según código) para activar el vacío, de ahí hace el path donde va hasta la estantería, toma la ficha y vuelve al punto estacionario del workobject de la estantería, luego hace el path de soltar la ficha donde va hasta el balde, ubicado en el punto de aislamiento y cuando esta encima de él de acuerdo al path, se suelta la ficha, desactivando el vacío por medio de la otra electroválvula(salida 1 según código), para finalmente volver al punto
 
 
 
@@ -198,3 +196,11 @@ Después de sincronizar se modifica el main en el orden deseado, empieza con un 
 <h2>
  6.Implementación en el brazo ABB IRB 140
 </h2>
+
+Con lo anterior establecido, sincronizamos con el entorno RAPID y procedemos a realizar el código que ejecutará el robot.
+
+El ejercicio se resuelve en el orden de tener 4 entradas y 2 salidas, las 4 entradas corresponden a los 4 botones para cada rutina, las 2 salidas para el on y off de la electroválvula que prende y apaga el vacío de la ventosa, por lo que se crean en el entorno de simulación.
+
+Esta electroválvula funciona con 2 debido a que con una señal empuja para activar y con otra diferente se desactiva, de manera que para cada señal, se debe energizar para que prenda la electroválvula y mantener ahí un poco para asegurar su funcionamiento, con 1 segundo es suficiente y luego de desenergiza para que de la libertad a la otra electroválvula de moverla y poder quitar y poner el vacío deseado.
+
+Después de sincronizar se modifica el main en el orden deseado, empieza con un path de ir al home del robot de ahi sigue con el path de tomar el balde, y luego con los 2 paths de dejarlo con los 3 segundos intermedios, posteriormente se deja unos 3 segundos donde el operador debe seleccionar qué rutina tomar, y en este orden el programa decide cuál de las 4 opciones operar, cuando entra a una rutina, realiza el mismo proceso para cada una de las 4 fichas que toma. Primero prende la electroválvula(salida 2 según código) para activar el vacío, de ahí hace el path donde va hasta la estantería, toma la ficha y vuelve al punto estacionario del workobject de la estantería, luego hace el path de soltar la ficha donde va hasta el balde, ubicado en el punto de aislamiento y cuando esta encima de él de acuerdo al path, se suelta la ficha, desactivando el vacío por medio de la otra electroválvula(salida 1 según código), para finalmente volver al punto
