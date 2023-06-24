@@ -258,3 +258,10 @@ Los videos muestran inicialmente la simulación realizada en el RobotStudio para
 <h2>
  8.Conlcusiones
 </h2>
+
+* Se concluye que un sistema tan elaborado y común en la industria como el Pick & Place se puede automatizar y lograr con los conocimientos obtenidos a lo largo del semestre con el uso del robot IRB 140.
+
+* Se aprendió que en este proceso se enfrentan a varios problemas y detalles que se solucionan ya estando en práctica con el robot real, dándonos a entender que solo el modelado y simulación no es suficiente para un proceso completo.
+
+* Se entiende la importancia de crear y ordenar los procesos y desarrollos para facilidad en modificaciones de código y ajustes en el entorno de trabajo
+
