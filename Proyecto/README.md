@@ -68,7 +68,7 @@ Para realiazr la implementación de las rutinas en RobotStudio es necesario tene
 El estanteria implementada tiene las siguientes medidas.
 
 <p align="center">
-  <img width="30%" align="center" src="Imagenes/Estanteria_Medidas.png"/>
+  <img width="50%" align="center" src="Imagenes/Estanteria_Medidas.png"/>
  </p>
 <p align="center">
   <em>Figura 1: Medidas de la Estanteria</em>
@@ -77,7 +77,7 @@ El estanteria implementada tiene las siguientes medidas.
 La estanteria presenta una profundidad de 10 cm. Con estas mediadas se construye un modelado con el software Autodesk Inventor. 
 
 <p align="center">
-  <img width="60%" align="center" src="Imagenes/Estanteria_Modelado.png"/>
+  <img width="40%" align="center" src="Imagenes/Estanteria_Modelado.png"/>
  </p>
 <p align="center">
   <em>Figura 2: Modelado de la Estanteria</em>
