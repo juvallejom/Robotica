@@ -55,6 +55,15 @@ El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se 
    <em>Figura 3 :Cuerpo de la herramienta</em>
    </p
 
+Resultado final del modelamiento y construcción de la herramienta
+  <p align="center">
+  <img width="40%" align="center" src="Imagenes/Portaherramineta_Impreso1.png"/>
+  </p>
+  <p align="center">
+  <em>Figura 4: Modelo Final Portaherramienta implementado en el proyecto</em>
+  </p>
+
+
 <h2>
  3.Diseño y modelado de elementos.
 </h2>
@@ -71,7 +80,7 @@ El estanteria implementada tiene las siguientes medidas.
   <img width="50%" align="center" src="Imagenes/Estanteria_Medidas.png"/>
  </p>
 <p align="center">
-  <em>Figura 1: Medidas de la Estanteria</em>
+  <em>Figura 5: Medidas de la Estanteria</em>
  </p>
 
 La estanteria presenta una profundidad de 10 cm. Con estas mediadas se construye un modelado con el software Autodesk Inventor. 
@@ -80,11 +89,10 @@ La estanteria presenta una profundidad de 10 cm. Con estas mediadas se construye
   <img width="40%" align="center" src="Imagenes/Estanteria_Modelado.png"/>
  </p>
 <p align="center">
-  <em>Figura 2: Modelado de la Estanteria</em>
+  <em>Figura 6: Modelado de la Estanteria</em>
  </p>
 
 
-INSERTAT IMAGEN PLANO ESTANTERIA 
 
 <h3>
  3.2. Piezas. 
@@ -97,7 +105,7 @@ La única restricción es su tamaño el cual debe ser meayor a la campana de suc
   <img width="30%" align="center" src="Imagenes/Estanteria_ConPiezas.png"/>
   </p>
   <p align="center">
-  <em>Figura 2: Disposición de las piezas de la estanteria</em>
+  <em>Figura 7: Disposición de las piezas de la estanteria</em>
   </p>
 
 <h3>
@@ -112,7 +120,7 @@ Por otro lado, el modelado del gancho y del balde son incluidos dentro del plant
   <img width="30%" align="center" src="Imagenes/Balde.png"/>
   </p>
   <p align="center">
-  <em>Figura 2: Modelado del Balde</em>
+  <em>Figura 8: Modelado del Balde</em>
   </p>
 
 *Modelo del Gancho*
@@ -120,7 +128,7 @@ Por otro lado, el modelado del gancho y del balde son incluidos dentro del plant
   <img width="30%" align="center" src="Imagenes/Gancho.png"/>
   </p>
   <p align="center">
-  <em>Figura 2: Modelado del Gancho</em>
+  <em>Figura 9: Modelado del Gancho</em>
   </p>
 
 
@@ -134,14 +142,14 @@ Esta herramienta fue incluida detro del plantemaineto del proyecto. A continuaci
   <img width="30%" align="center" src="Imagenes/Ventosa_Modelado.png"/>
  </p>
 <p align="center">
-  <em>Figura 2: Modelado de la Ventosa</em>
+  <em>Figura 10: Modelado de la Ventosa</em>
  </p>
 
   <p align="center">
   <img width="30%" align="center" src="Imagenes/Ventosa_real.png"/>
   </p>
   <p align="center">
-  <em>Figura 2: Ventosa implementada en las rutinas</em>
+  <em>Figura 11: Ventosa implementada en las rutinas</em>
   </p>
 
 <h2>
@@ -160,7 +168,7 @@ Con el objetivo de asegurar un movimiento sencillo del robot y mantenerlo dentro
   <img width="30%" align="center" src="Imagenes/LimitesArticularesRobot.png"/>
  </p>
 <p align="center">
-  <em>Figura 2:Limites Articualres del Robot</em>
+  <em>Figura 12:Limites Articualres del Robot</em>
  </p>
 
 
@@ -215,7 +223,7 @@ La creación de las caminos o path, se hacen en función de cada WorkObject .A c
   <img width="60%" align="center" src="Imagenes/RobotStudio_Entorno.png"/>
   </p>
   <p align="center">
-  <em>Figura 2: Implementación en RobotStudio</em>
+  <em>Figura 13: Implementación en RobotStudio</em>
   </p>
 
 
