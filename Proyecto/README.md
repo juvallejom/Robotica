@@ -41,6 +41,12 @@ El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se 
   <em>Figura 1 :Anclaje de la herramienta al Robot</em>
   </p>
 * Sujeción ventosa y ventosa
+   <p align="center">
+   <img width="60%" align="center" src="Imagenes/Portaherramienta_AnclaVentosa.png"/>
+   </p>
+   <p align="center">
+   <em>Figura 1 :Anclaje de la herramienta al Robot</em>
+   </p
 * Sección de cambio de orientación de la ventosa.
 
 <h2>
