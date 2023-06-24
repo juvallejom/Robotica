@@ -114,7 +114,7 @@ INCLUIR MODELADO GANCHO
 Esta herramienta fue incluida detro del plantemaineto del proyecto. A continuación se evidencia su modelado.
 
 <p align="center">
-  <img width="60%" align="center" src="Imagenes/Ventosa_Modelado.png"/>
+  <img width="30%" align="center" src="Imagenes/Ventosa_Modelado.png"/>
  </p>
 <p align="center">
   <em>Figura 2: Modelado de la Ventosa</em>
@@ -133,7 +133,7 @@ Es importante destacar que este punto se encuentra dentro de los límites articu
 Con el objetivo de asegurar un movimiento sencillo del robot y mantenerlo dentro de sus límites articulares, se ha diseñado cuidadosamente la ubicación y los procesos en el punto de alistamiento. Como se puede observar en la imagen, el robot no excede sus límites articulares, lo que facilita la ejecución de las acciones solicitadas.
 
 <p align="center">
-  <img width="60%" align="center" src="Imagenes/LimitesArticularesRobot.png"/>
+  <img width="30%" align="center" src="Imagenes/LimitesArticularesRobot.png"/>
  </p>
 <p align="center">
   <em>Figura 2:Limites Articualres del Robot</em>
