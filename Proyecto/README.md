@@ -91,10 +91,41 @@ La ubicación seleccionada para el punto de alistamiento se encuentra en el punt
 
 Es importante destacar que este punto se encuentra dentro de los límites articulares del robot, lo que significa que se espera que el robot pueda ejecutar los movimientos y rutinas solicitadas sin dificultades significativas.
 
+Con el objetivo de asegurar un movimiento sencillo del robot y mantenerlo dentro de sus límites articulares, se ha diseñado cuidadosamente la ubicación y los procesos en el punto de alistamiento. Como se puede observar en la imagen, el robot no excede sus límites articulares, lo que facilita la ejecución de las acciones solicitadas.
+
 
 <h2>
  5.Desarrollo e Implementación en RobotStudio
 </h2>
+
+Dentro del software RobotStudio se hace uso del robot ABB IRB 140 con su respectivo controlador, se importan los elementos modelados y se acomodan en el espacio de acuerdo a las medidas realizadas.
+
+Para tener referencia física de los dispositivos que se implementan, se usará el robot 1 del LabSir, en el cual la banda transportadora se sitúa al  lado derecho del robot viéndolo desde su posición de home.
+
+En el entorno de Home de  RobotStudio se generan 3  workobjects, asociados al balde en la banda transportadora, al punto de alistamiento y la estantería respectivamente.
+
+A partir de lo anterior, se ajustan  los elementos en cada parte y se ordenan los modelados según sea el caso.
+Para la estantería se realiza en un solo modelo incluyendo las piezas ubicadas en la estantería para mayor facilidad en su manejo. Referente al porta herramienta, se importa el modelo y se asigna como herramienta con la opción de Create tool, en este entorno se crea la herramienta y ahí mismo se ajustan los TCP de la misma, uno para el gancho y otro para la ventosa.En el caso del gancho, su TCP se estima en un punto del mismo donde se asegure que pueda tomar y dejar el balde sin problema. Una vez creada la herramienta se asocia al robot y esta queda configurada para su uso.
+
+<h3>
+ Lógica y Programación.
+</h3>
+
+La solución planteada para esta implementación consiste en construir 3 WorkObjects (balde, punto de aislamiento y  estantería) desde los cuales se definirán los targets con el fin de simplificar el uso de los mismos.
+
+El origen de cada WorkObject se ubica de tal manera que el sistema se modele lo más cercano posible a la disposición real de los elementos en el laboratorio. 
+
+Para la banda transportadora su origen se ubica en el punto de sujeción del balde y de igual forma para el punto de alistamiento.
+Cada workobject tiene un estado estacionario, correspondiente a un target donde el robot se moverá de manera inicial y final, esto con el objetivo de facilitar las rutinas que lo involucran.
+
+La creación de las caminos o path, se hacen en función de cada WorkObject .A continuación se hace una breve descripción del método o ruta de decisión para generar los paths de cada WorkObject. 
+* **Balde en la banda transportadora :**  Se hace uso del TCP del gancho. De manera inicial, se hacen 2 caminos, uno para tomar el balde y otro para dejarlo; cada uno consta de 5 targets,en el caso de tomar el balde se generan tarjeta movimiento al punto de estado estacionario - aproximación por un costado al balde -  sujeción del balde - levantamiento el balde - retornar el balde al estado estacionario.
+  
+De manera similar funciona el segundo path para dejar el balde, siguiendo el siguiente orden : levantamiento del balde -  movimiento de bajada del balde - descargue del balde - salida de la herramienta por un costado - retornar al estado estacionario.
+
+* 
+
+
 
 <h2>
  6.Implementación en el brazo ABB IRB 140
