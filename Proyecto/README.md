@@ -57,7 +57,7 @@ El portaherramienta se diseñó para ser impresa en 3D con PLA, en este caso se 
 
 Resultado final del modelamiento y construcción de la herramienta
   <p align="center">
-  <img width="40%" align="center" src="Imagenes/Portaherramineta_Impreso1.png"/>
+  <img width="40%" align="center" src="Imagenes/Portaherramienta_Impreso1.png"/>
   </p>
   <p align="center">
   <em>Figura 4: Modelo Final Portaherramienta implementado en el proyecto</em>
